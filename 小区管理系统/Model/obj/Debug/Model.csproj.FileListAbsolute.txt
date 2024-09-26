@@ -1,0 +1,60 @@
+E:\桌面\小区管理系统 - 副本 (2)\Model\bin\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本 (2)\Model\bin\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本 (2)\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统 - 副本 (2)\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统 - 副本 (2)\Model\obj\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本 (2)\Model\obj\Debug\Model.pdb
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\Model\bin\Debug\Model.dll
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\Model\bin\Debug\Model.pdb
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\Model\obj\Debug\Model.dll
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\Model\obj\Debug\Model.pdb
+E:\桌面\毕业设计\小区管理系统\Model\bin\Debug\Model.dll
+E:\桌面\毕业设计\小区管理系统\Model\bin\Debug\Model.pdb
+E:\桌面\毕业设计\小区管理系统\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\桌面\毕业设计\小区管理系统\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\桌面\毕业设计\小区管理系统\Model\obj\Debug\Model.dll
+E:\桌面\毕业设计\小区管理系统\Model\obj\Debug\Model.pdb
+E:\桌面\小区管理系统\Model\bin\Debug\Model.dll
+E:\桌面\小区管理系统\Model\bin\Debug\Model.pdb
+E:\桌面\小区管理系统\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统\Model\obj\Debug\Model.dll
+E:\桌面\小区管理系统\Model\obj\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1\Model\bin\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本 - 副本1\Model\bin\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统 - 副本 - 副本1\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统 - 副本 - 副本1\Model\obj\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本 - 副本1\Model\obj\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\Model\bin\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\Model\bin\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\Model\obj\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\Model\obj\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\Model\bin\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\Model\bin\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\Model\obj\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\Model\obj\Debug\Model.pdb
+E:\桌面\毕业设计\小区管理系统 6\Model\bin\Debug\Model.dll
+E:\桌面\毕业设计\小区管理系统 6\Model\bin\Debug\Model.pdb
+E:\桌面\毕业设计\小区管理系统 6\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\桌面\毕业设计\小区管理系统 6\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\桌面\毕业设计\小区管理系统 6\Model\obj\Debug\Model.dll
+E:\桌面\毕业设计\小区管理系统 6\Model\obj\Debug\Model.pdb
+E:\桌面\毕业设计\小区管理系统 8\Model\bin\Debug\Model.dll
+E:\桌面\毕业设计\小区管理系统 8\Model\bin\Debug\Model.pdb
+E:\桌面\毕业设计\小区管理系统 8\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\桌面\毕业设计\小区管理系统 8\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\桌面\毕业设计\小区管理系统 8\Model\obj\Debug\Model.dll
+E:\桌面\毕业设计\小区管理系统 8\Model\obj\Debug\Model.pdb
+E:\下载\text1-master\text1-master\小区管理系统\Model\bin\Debug\Model.dll
+E:\下载\text1-master\text1-master\小区管理系统\Model\bin\Debug\Model.pdb
+E:\下载\text1-master\text1-master\小区管理系统\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\下载\text1-master\text1-master\小区管理系统\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\下载\text1-master\text1-master\小区管理系统\Model\obj\Debug\Model.dll
+E:\下载\text1-master\text1-master\小区管理系统\Model\obj\Debug\Model.pdb

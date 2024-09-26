@@ -1,0 +1,99 @@
+E:\桌面\小区管理系统 - 副本 (2)\DAL\bin\Debug\DAL.dll
+E:\桌面\小区管理系统 - 副本 (2)\DAL\bin\Debug\DAL.pdb
+E:\桌面\小区管理系统 - 副本 (2)\DAL\bin\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本 (2)\DAL\bin\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本 (2)\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统 - 副本 (2)\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统 - 副本 (2)\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\桌面\小区管理系统 - 副本 (2)\DAL\obj\Debug\DAL.dll
+E:\桌面\小区管理系统 - 副本 (2)\DAL\obj\Debug\DAL.pdb
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\DAL\bin\Debug\DAL.dll
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\DAL\bin\Debug\DAL.pdb
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\DAL\bin\Debug\Model.dll
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\DAL\bin\Debug\Model.pdb
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\DAL\obj\Debug\DAL.dll
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\DAL\obj\Debug\DAL.pdb
+E:\桌面\毕业设计\小区管理系统\DAL\bin\Debug\DAL.dll
+E:\桌面\毕业设计\小区管理系统\DAL\bin\Debug\DAL.pdb
+E:\桌面\毕业设计\小区管理系统\DAL\bin\Debug\Model.dll
+E:\桌面\毕业设计\小区管理系统\DAL\bin\Debug\Model.pdb
+E:\桌面\毕业设计\小区管理系统\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\桌面\毕业设计\小区管理系统\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\桌面\毕业设计\小区管理系统\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\桌面\毕业设计\小区管理系统\DAL\obj\Debug\DAL.dll
+E:\桌面\毕业设计\小区管理系统\DAL\obj\Debug\DAL.pdb
+E:\桌面\小区管理系统\DAL\bin\Debug\DAL.dll
+E:\桌面\小区管理系统\DAL\bin\Debug\DAL.pdb
+E:\桌面\小区管理系统\DAL\bin\Debug\Model.dll
+E:\桌面\小区管理系统\DAL\bin\Debug\Model.pdb
+E:\桌面\小区管理系统\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\桌面\小区管理系统\DAL\obj\Debug\DAL.dll
+E:\桌面\小区管理系统\DAL\obj\Debug\DAL.pdb
+E:\桌面\小区管理系统 - 副本\DAL\bin\Debug\DAL.dll
+E:\桌面\小区管理系统 - 副本\DAL\bin\Debug\DAL.pdb
+E:\桌面\小区管理系统 - 副本\DAL\bin\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本\DAL\bin\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统 - 副本\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统 - 副本\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\桌面\小区管理系统 - 副本\DAL\obj\Debug\DAL.dll
+E:\桌面\小区管理系统 - 副本\DAL\obj\Debug\DAL.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1\DAL\bin\Debug\DAL.dll
+E:\桌面\小区管理系统 - 副本 - 副本1\DAL\bin\Debug\DAL.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1\DAL\bin\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本 - 副本1\DAL\bin\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统 - 副本 - 副本1\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统 - 副本 - 副本1\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\桌面\小区管理系统 - 副本 - 副本1\DAL\obj\Debug\DAL.dll
+E:\桌面\小区管理系统 - 副本 - 副本1\DAL\obj\Debug\DAL.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\DAL\bin\Debug\DAL.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\DAL\bin\Debug\DAL.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\DAL\bin\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\DAL\bin\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\DAL\obj\Debug\DAL.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\DAL\obj\Debug\DAL.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\DAL\bin\Debug\DAL.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\DAL\bin\Debug\DAL.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\DAL\bin\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\DAL\bin\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\DAL\obj\Debug\DAL.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\DAL\obj\Debug\DAL.pdb
+E:\桌面\毕业设计\小区管理系统 6\DAL\bin\Debug\DAL.dll
+E:\桌面\毕业设计\小区管理系统 6\DAL\bin\Debug\DAL.pdb
+E:\桌面\毕业设计\小区管理系统 6\DAL\bin\Debug\Model.dll
+E:\桌面\毕业设计\小区管理系统 6\DAL\bin\Debug\Model.pdb
+E:\桌面\毕业设计\小区管理系统 6\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\桌面\毕业设计\小区管理系统 6\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\桌面\毕业设计\小区管理系统 6\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\桌面\毕业设计\小区管理系统 6\DAL\obj\Debug\DAL.dll
+E:\桌面\毕业设计\小区管理系统 6\DAL\obj\Debug\DAL.pdb
+E:\桌面\毕业设计\小区管理系统 8\DAL\bin\Debug\DAL.dll
+E:\桌面\毕业设计\小区管理系统 8\DAL\bin\Debug\DAL.pdb
+E:\桌面\毕业设计\小区管理系统 8\DAL\bin\Debug\Model.dll
+E:\桌面\毕业设计\小区管理系统 8\DAL\bin\Debug\Model.pdb
+E:\桌面\毕业设计\小区管理系统 8\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\桌面\毕业设计\小区管理系统 8\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\桌面\毕业设计\小区管理系统 8\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\桌面\毕业设计\小区管理系统 8\DAL\obj\Debug\DAL.dll
+E:\桌面\毕业设计\小区管理系统 8\DAL\obj\Debug\DAL.pdb
+E:\下载\text1-master\text1-master\小区管理系统\DAL\bin\Debug\DAL.dll
+E:\下载\text1-master\text1-master\小区管理系统\DAL\bin\Debug\DAL.pdb
+E:\下载\text1-master\text1-master\小区管理系统\DAL\bin\Debug\Model.dll
+E:\下载\text1-master\text1-master\小区管理系统\DAL\bin\Debug\Model.pdb
+E:\下载\text1-master\text1-master\小区管理系统\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\下载\text1-master\text1-master\小区管理系统\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\下载\text1-master\text1-master\小区管理系统\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\下载\text1-master\text1-master\小区管理系统\DAL\obj\Debug\DAL.dll
+E:\下载\text1-master\text1-master\小区管理系统\DAL\obj\Debug\DAL.pdb

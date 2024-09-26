@@ -1,0 +1,53 @@
+﻿/* 时间选择器通用样式优化 */
+.datepicker {
+    border: 1px solid #ced4da; /* 边框颜色 */
+    border-radius: .3rem; /* 圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1); /* 阴影 */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* 字体 */
+}
+
+.datepicker-dropdown {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0) !important; /* 背景渐变 */
+}
+
+.datepicker table {
+    color: #333; /* 日期文字颜色 */
+}
+
+.datepicker .table-condensed {
+    border-radius: .3rem; /* 表格圆角 */
+}
+
+/* 当天日期样式 */
+.datepicker .day.active, .datepicker .day.active:hover, .datepicker .day.active:focus {
+    background-color: #007bff; /* 激活状态背景色 */
+    color: #fff; /* 激活状态文字色 */
+    border-radius: .3rem; /* 圆角 */
+}
+
+/* 鼠标悬停日期样式 */
+.datepicker .day:hover, .datepicker .day:focus {
+    background-color: #e9ecef; /* 鼠标悬停背景色 */
+    border-radius: .3rem; /* 圆角 */
+}
+
+/* 已选日期范围样式 */
+.datepicker .range {
+    background-color: #f8f9fa !important; /* 范围背景色 */
+    border-radius: .3rem; /* 圆角 */
+}
+
+/* 禁用和不属于当前月份的日期样式 */
+.datepicker .day.disabled, .datepicker .day.old, .datepicker .day.new {
+    color: #ccc; /* 文字颜色 */
+}
+
+/* 导航按钮样式 */
+.datepicker .prev, .datepicker .next {
+    cursor: pointer; /* 鼠标样式 */
+}
+
+    /* 导航箭头颜色 */
+    .datepicker .prev:before, .datepicker .next:before {
+        color: #007bff; /* 箭头颜色 */
+    }

@@ -1,0 +1,224 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.Master.cs" Inherits="UI.Views.Master.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../../bootstrap5/css/bootstrap.min.css" />
+    <script src="../../bootstrap5/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../Master.CSS/master.css" />
+    <link rel="stylesheet" href="../../font/css/all.css" />
+    <link rel="stylesheet" href="../../font/css/fontawesome.min.css" />
+        <script src="../../JS/jquery-3.7.1.min.js"></script>
+    <script src="../../bootstrap-datepicker-1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="../../bootstrap-datepicker-1.9.0/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+    <link rel="stylesheet" href="../../bootstrap-datepicker-1.9.0/css/bootstrap-datepicker.min.css" />
+
+    <script src="../../echarts-5.5.0/dist/echarts.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        body {
+            font-size: 12px;
+            background-color: #F2F2F2
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid" style="background-color: #F2F2F2">
+            <div class="row">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top we" style="background-color:#222222!important">
+                    <span>小区管理员后台系统！</span>
+                </nav>
+                <header class="col-lg-2" style="padding-right: 0px">
+                    <div class="nav" >
+                        <ul style="overflow-y: auto; max-height: 93vh; overflow-x: hidden;">
+                            <li style="position: relative">
+                                <a class="collapsed " data-bs-toggle="collapse" data-bs-target="#demo">
+                                    <i class="fa-solid fa-folder"></i>
+                                    <span class="menu-title">基础信息</span>
+                                       <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                                <div id="demo" class="collapse ">
+                                    <ul>
+                                        <li>
+                                            <a href="../residentui/residentlist.aspx" class="nav-link ">
+                                                <i class="fa-solid fa-user "></i>
+                                                <span>业主信息</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../carui/carui.aspx" class="nav-link ">
+                                                <i class="fa-solid fa-car "></i>
+                                                <span>车辆管理</span>
+                                            </a>
+                                        </li>   <li>
+                                            <a href="../Carbarn/CarbarnList.aspx" class="nav-link ">
+                                            <i class="fa-solid fa-warehouse"></i>
+                                                <span>车库管理</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../house/houseui.aspx" class="nav-link ">
+                                                <i class="fa-solid fa-house "></i>
+                                                <span>房产档案</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        
+                            <li style="position: relative">
+                                <a class="collapsed " data-bs-toggle="collapse" data-bs-target="#demo8">
+                                    <i class="fa-solid fa-comment-dollar "></i>
+                                    <span class="menu-title">收费管理</span>
+                                     <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                                <div id="demo8" class="collapse ">
+                                    <ul>
+                                        <li>
+                                            <a href="../ServiceChargeUI/ServiceChargeUI.aspx" class="nav-link ">
+                                              <i class="fa-solid fa-book-open"></i>
+                                                <span>收费信息</span>
+                                            </a>
+                                        </li> 
+                                        <li>
+                                            <a href="../ShuiDianRegister/ShuiDianRegisterUI.aspx" class="nav-link ">
+                                                     <i class="fa-solid fa-pen-nib "></i>
+                                                <span>水电费登记</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../ServiceChargeUI/ServiceChargeing.aspx" class="nav-link ">
+                                                 <i class="fa-solid fa-comment-dollar "></i>
+                                                <span>费用缴纳</span>
+                                            </a>
+                                        </li>
+                             
+                                    </ul>
+                                </div>
+                            </li>
+                 <%--           <li>
+                                <a href="../staff/staffList.aspx">
+                                    <i class="fa-solid fa-hammer"></i>
+                                    <span class="menu-title">员工管理</span>
+                                </a>
+                            </li>  --%>
+                            <li>
+                                <a href="../staff/StaffList2.aspx">
+                                  <i class="fa-solid fa-user "></i>
+                                    <span class="menu-title">员工管理</span>
+                                </a>
+                            </li>       
+                            <li>
+                                <a  href="../JiaZhengUI/JiaZhengDingDanList.aspx" >
+                                    <i class="fa-solid fa-hammer"></i>
+                                    <span class="menu-title">家政服务</span>
+                                </a>
+                            </li>
+
+                            <li style="position: relative">
+                                <a class=" collapsed" data-bs-toggle="collapse" data-bs-target="#demo1">
+                                    <i class="fa-solid fa-folder"></i>
+                                    <span class="menu-title">公告通知</span>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+
+                                <div id="demo1" class="collapse">
+                                    <ul class="flex-column sub-menu">
+                                        <li class="nav-item ">
+                                            <a href="../Notice/NoticeUI.aspx" class="nav-link ">
+                                                <i class="fa-solid fa-pen-nib "></i>
+                                                <span>公告编写</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../Notice/NoticeList.aspx" class="nav-link ">
+                                                <i class="fa-solid fa-clipboard "></i>
+                                                <span>公告记录</span>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li style="position: relative">
+                                <a class="collapsed" data-bs-toggle="collapse" data-bs-target="#demo2">
+                                    <i class="fa-solid fa-person"></i>
+                                    <span class="menu-title">访客记录</span>
+                                      <i class="fa-solid fa-chevron-right"></i>
+
+                                </a>
+                                <div id="demo2" class="collapse">
+                                    <ul class="flex-column sub-menu">
+                                        <li>
+                                            <a href="../VisitRecordUI/VisitRecordUIAdd.aspx" class="nav-link ">
+                                                <i class="fa-solid fa-pen-nib "></i>
+                                                <span>访客登记</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../VisitRecordUI/VisitRecordList.aspx" class="nav-link ">
+                                                <i class="fa-solid fa-clipboard "></i>
+                                                <span>访客记录</span>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class=" zuocedaohangbiankaung">
+                                <a href="../Complaint/ComplaintList.aspx">
+                                    <i class="fa-solid fa-pen"></i>
+                                    <span class="menu-title">投诉建议</span>
+                                    <%--  <i class="fa-solid fa-chevron-down ee"></i>--%>
+                                </a>
+                            </li>
+                                  <li>
+          <a href="../News/NewsList.aspx">
+           <i class="fa-solid fa-message"></i>
+              <span class="menu-title">个人通知</span>
+          </a>
+      </li>   
+                        </ul>
+                    </div>
+                </header>
+
+                <div class="col-lg-10" style="padding-left: 0px">
+                    <div class="Main-panel">
+
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </form>
+        <script>
+        $(document).ready(function () {
+            $('.collapsed').on('click', function () {
+                let chevronIcon = $(this).find('.fa-chevron-right, .fa-chevron-down');
+
+                if (chevronIcon.hasClass('fa-chevron-right')) {
+                    chevronIcon.removeClass('fa-chevron-right').addClass('fa-chevron-down');
+                } else if (chevronIcon.hasClass('fa-chevron-down')) {
+                    chevronIcon.removeClass('fa-chevron-down').addClass('fa-chevron-right');
+                }
+            });
+        });
+        </script>
+</body>
+</html>
+
+
+

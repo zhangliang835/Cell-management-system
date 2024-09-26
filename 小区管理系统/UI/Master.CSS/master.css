@@ -1,0 +1,239 @@
+﻿
+header {
+    padding-left: 0 !important;
+    margin-top: 56px!important;
+}
+.Main-panel{
+    margin-top:56px;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+}
+/* 进入超小屏幕，nac里的li浮动，宽度为20% */
+@media screen and (max-width:991px) {
+
+    .nav > ul > li {
+        float: left;
+        /*display: flex;
+        flex-direction: row;*/
+        margin-left: 71px;
+        width: 20%;
+    }
+    .nav span,i{
+        color:black!important;
+    }
+    #demo {
+        position: absolute;
+        top: 36px;
+        background-color: #F2F2F2;
+        z-index: 1000;
+    }
+
+    #demo1 {
+        position: absolute;
+        top: 36px;
+        background-color: #F2F2F2;
+        z-index: 1000;
+
+    }
+
+    #demo2 {
+        position: absolute;
+        top: 36px;
+        background-color: #F2F2F2 !important;
+ 
+        z-index: 1000;
+    }   
+    #demo8 {
+        position: absolute;
+        top: 36px;
+        background-color: #F2F2F2 !important;
+ 
+        z-index: 1000;
+    }
+    .nav ul li a {
+        padding-left: 0px!important;
+    }
+
+  
+        .nav{
+            height:auto!important;
+        }
+
+    .Main-panel {
+        margin-top: -95px!important;
+    }
+    header {
+
+        margin-top: 53px !important;
+    }
+   
+}
+/* 进入超小屏幕，nac里字体变小 */
+
+@media screen and (max-width:768px) {
+    .menu-title {
+        font-size: 16px !important;
+    }
+
+    #demo span, i {
+        font-size: 12px !important;
+    }
+    #demo{
+        background-color:white;
+        width:120px;
+    }
+    #demo1 {
+        background-color: white;
+        width: 120px;
+    }
+    #demo2 {
+        background-color: white !important;
+        width: 120px;
+    }
+    #demo8 {
+        background-color: white !important;
+        width: 120px;
+    }
+    #demo1 span, i {
+        font-size: 12px !important;
+    } 
+    #demo8 span, i {
+        font-size: 12px !important;
+    }
+
+    #demo2 span, i {
+        font-size: 12px !important;
+    }
+    .we  span {
+        color: white !important;
+        font-size: 12px;
+    }
+
+}
+
+
+.nav a:hover {
+    background-color: #C9C9C9;
+}
+
+.nav span {
+    color: white;
+    font-size: 17px;
+ 
+}.nav i {
+    color: white;
+    font-size: 12px;
+    
+}
+
+.navbar-right .navbar-right-quitlogin a {
+    color: black;
+}
+
+.navbar-right-quitlogin img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.navbar-right-quitlogin span {
+    margin-left: 10px;
+}
+
+
+
+.nav-item-left,
+.nav-item-right {
+    flex: 0 0 auto;
+    /* 确保它们不会增长或缩小，而是各自占据固定空间 */
+}
+
+.nav-item-left {
+    /* 图片在左 */
+    margin-right: auto;
+    /* 让图片元素向右移动直到不能再移动（即与右边元素贴边） */
+}
+
+.nav-item-right {
+    /* 图标在右 */
+    margin-left: auto;
+    /* 让图标元素向左移动直到不能再移动（即与左边元素贴边） */
+}
+
+.Main {
+    /*  display: flex;
+        flex-direction: row;*/
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 50px;
+}
+
+.col-md-2 {
+    padding-left: 0 !important;
+}
+
+.nav {
+    display: block;
+    background-color: #222222;
+    height: 93vh;
+}
+
+
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    text-decoration: none;
+    font-family:'宋体';
+}
+.nav ul li a {
+    padding-left: 20px;
+}
+    .nav ul li a.nav-link {
+        padding-left: 40px;
+        line-height: 37px;
+    }
+
+.menu-title {
+    font-size: 18px;
+  
+}
+
+
+
+
+.Main-panel {
+    width: 100%;
+    margin-left: 10px;
+}
+
+
+
+
+
+.nav a.nav-link:hover span {
+    color: red !important;
+}
+
+.nav a.nav-link:hover i.fa-solid.fa-house.cc {
+    color: red !important;
+}
+
+nav span{
+    color:white;
+    font-size:18px; 
+}
+nav{
+    height:55px;
+}

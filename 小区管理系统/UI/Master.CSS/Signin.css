@@ -1,0 +1,40 @@
+﻿body {
+    background-color: rgba(207,206,217,1);
+}
+.form-control {
+    border-radius: 0;
+    width: 81%;
+    border: 1px solid whitesmoke;
+/*自适应高度*/
+    height: auto;
+}
+
+.col-md-8 {
+   /* background-color:saddlebrown;*/
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 37px;
+}
+.form-group label {
+    width: 58px;
+    margin-right: 10px;
+}
+.youbian {
+    margin-top: 7px;
+    border: 1px solid red;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 50px;
+}
+
+.container span {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "宋体";
+    color: black;
+    height: 30px;
+    display: block;
+    margin: 18px 30px 26px;
+}

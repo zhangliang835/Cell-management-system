@@ -1,0 +1,121 @@
+E:\桌面\小区管理系统 - 副本 (2)\BLL\bin\Debug\BLL.dll
+E:\桌面\小区管理系统 - 副本 (2)\BLL\bin\Debug\BLL.pdb
+E:\桌面\小区管理系统 - 副本 (2)\BLL\bin\Debug\DAL.dll
+E:\桌面\小区管理系统 - 副本 (2)\BLL\bin\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本 (2)\BLL\bin\Debug\DAL.pdb
+E:\桌面\小区管理系统 - 副本 (2)\BLL\bin\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本 (2)\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统 - 副本 (2)\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统 - 副本 (2)\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\桌面\小区管理系统 - 副本 (2)\BLL\obj\Debug\BLL.dll
+E:\桌面\小区管理系统 - 副本 (2)\BLL\obj\Debug\BLL.pdb
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\BLL\bin\Debug\BLL.dll
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\BLL\bin\Debug\BLL.pdb
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\BLL\bin\Debug\DAL.dll
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\BLL\bin\Debug\Model.dll
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\BLL\bin\Debug\DAL.pdb
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\BLL\bin\Debug\Model.pdb
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\BLL\obj\Debug\BLL.dll
+E:\桌面\毕业设计\小区管理系统 - 副本 (2)\BLL\obj\Debug\BLL.pdb
+E:\桌面\毕业设计\小区管理系统\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\桌面\毕业设计\小区管理系统\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\桌面\毕业设计\小区管理系统\BLL\obj\Debug\BLL.dll
+E:\桌面\毕业设计\小区管理系统\BLL\obj\Debug\BLL.pdb
+E:\桌面\毕业设计\小区管理系统\BLL\bin\Debug\BLL.dll
+E:\桌面\毕业设计\小区管理系统\BLL\bin\Debug\BLL.pdb
+E:\桌面\毕业设计\小区管理系统\BLL\bin\Debug\DAL.dll
+E:\桌面\毕业设计\小区管理系统\BLL\bin\Debug\Model.dll
+E:\桌面\毕业设计\小区管理系统\BLL\bin\Debug\DAL.pdb
+E:\桌面\毕业设计\小区管理系统\BLL\bin\Debug\Model.pdb
+E:\桌面\毕业设计\小区管理系统\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\桌面\小区管理系统\BLL\bin\Debug\BLL.dll
+E:\桌面\小区管理系统\BLL\bin\Debug\BLL.pdb
+E:\桌面\小区管理系统\BLL\bin\Debug\DAL.dll
+E:\桌面\小区管理系统\BLL\bin\Debug\Model.dll
+E:\桌面\小区管理系统\BLL\bin\Debug\DAL.pdb
+E:\桌面\小区管理系统\BLL\bin\Debug\Model.pdb
+E:\桌面\小区管理系统\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\桌面\小区管理系统\BLL\obj\Debug\BLL.dll
+E:\桌面\小区管理系统\BLL\obj\Debug\BLL.pdb
+E:\桌面\小区管理系统 - 副本\BLL\bin\Debug\BLL.dll
+E:\桌面\小区管理系统 - 副本\BLL\bin\Debug\BLL.pdb
+E:\桌面\小区管理系统 - 副本\BLL\bin\Debug\DAL.dll
+E:\桌面\小区管理系统 - 副本\BLL\bin\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本\BLL\bin\Debug\DAL.pdb
+E:\桌面\小区管理系统 - 副本\BLL\bin\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统 - 副本\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统 - 副本\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\桌面\小区管理系统 - 副本\BLL\obj\Debug\BLL.dll
+E:\桌面\小区管理系统 - 副本\BLL\obj\Debug\BLL.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1\BLL\bin\Debug\BLL.dll
+E:\桌面\小区管理系统 - 副本 - 副本1\BLL\bin\Debug\BLL.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1\BLL\bin\Debug\DAL.dll
+E:\桌面\小区管理系统 - 副本 - 副本1\BLL\bin\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本 - 副本1\BLL\bin\Debug\DAL.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1\BLL\bin\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统 - 副本 - 副本1\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统 - 副本 - 副本1\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\桌面\小区管理系统 - 副本 - 副本1\BLL\obj\Debug\BLL.dll
+E:\桌面\小区管理系统 - 副本 - 副本1\BLL\obj\Debug\BLL.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\BLL\bin\Debug\BLL.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\BLL\bin\Debug\BLL.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\BLL\bin\Debug\DAL.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\BLL\bin\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\BLL\bin\Debug\DAL.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\BLL\bin\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\BLL\obj\Debug\BLL.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本\BLL\obj\Debug\BLL.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\BLL\bin\Debug\BLL.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\BLL\bin\Debug\BLL.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\BLL\bin\Debug\DAL.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\BLL\bin\Debug\Model.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\BLL\bin\Debug\DAL.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\BLL\bin\Debug\Model.pdb
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\BLL\obj\Debug\BLL.dll
+E:\桌面\小区管理系统 - 副本 - 副本1 - 副本 - 副本\BLL\obj\Debug\BLL.pdb
+E:\桌面\毕业设计\小区管理系统 6\BLL\bin\Debug\BLL.dll
+E:\桌面\毕业设计\小区管理系统 6\BLL\bin\Debug\BLL.pdb
+E:\桌面\毕业设计\小区管理系统 6\BLL\bin\Debug\DAL.dll
+E:\桌面\毕业设计\小区管理系统 6\BLL\bin\Debug\Model.dll
+E:\桌面\毕业设计\小区管理系统 6\BLL\bin\Debug\DAL.pdb
+E:\桌面\毕业设计\小区管理系统 6\BLL\bin\Debug\Model.pdb
+E:\桌面\毕业设计\小区管理系统 6\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\桌面\毕业设计\小区管理系统 6\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\桌面\毕业设计\小区管理系统 6\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\桌面\毕业设计\小区管理系统 6\BLL\obj\Debug\BLL.dll
+E:\桌面\毕业设计\小区管理系统 6\BLL\obj\Debug\BLL.pdb
+E:\桌面\毕业设计\小区管理系统 8\BLL\bin\Debug\BLL.dll
+E:\桌面\毕业设计\小区管理系统 8\BLL\bin\Debug\BLL.pdb
+E:\桌面\毕业设计\小区管理系统 8\BLL\bin\Debug\DAL.dll
+E:\桌面\毕业设计\小区管理系统 8\BLL\bin\Debug\Model.dll
+E:\桌面\毕业设计\小区管理系统 8\BLL\bin\Debug\DAL.pdb
+E:\桌面\毕业设计\小区管理系统 8\BLL\bin\Debug\Model.pdb
+E:\桌面\毕业设计\小区管理系统 8\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\桌面\毕业设计\小区管理系统 8\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\桌面\毕业设计\小区管理系统 8\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\桌面\毕业设计\小区管理系统 8\BLL\obj\Debug\BLL.dll
+E:\桌面\毕业设计\小区管理系统 8\BLL\obj\Debug\BLL.pdb
+E:\下载\text1-master\text1-master\小区管理系统\BLL\bin\Debug\BLL.dll
+E:\下载\text1-master\text1-master\小区管理系统\BLL\bin\Debug\BLL.pdb
+E:\下载\text1-master\text1-master\小区管理系统\BLL\bin\Debug\DAL.dll
+E:\下载\text1-master\text1-master\小区管理系统\BLL\bin\Debug\Model.dll
+E:\下载\text1-master\text1-master\小区管理系统\BLL\bin\Debug\DAL.pdb
+E:\下载\text1-master\text1-master\小区管理系统\BLL\bin\Debug\Model.pdb
+E:\下载\text1-master\text1-master\小区管理系统\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\下载\text1-master\text1-master\小区管理系统\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\下载\text1-master\text1-master\小区管理系统\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\下载\text1-master\text1-master\小区管理系统\BLL\obj\Debug\BLL.dll
+E:\下载\text1-master\text1-master\小区管理系统\BLL\obj\Debug\BLL.pdb

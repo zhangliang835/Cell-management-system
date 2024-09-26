@@ -1,0 +1,2919 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5E4C912E-E7B2-40C2-9A24-72413AE0B40E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.4.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="bootstrap-datepicker-1.9.0\css\bootstrap-datepicker.css" />
+    <Content Include="bootstrap-datepicker-1.9.0\css\bootstrap-datepicker.min.css" />
+    <Content Include="bootstrap-datepicker-1.9.0\css\bootstrap-datepicker.standalone.css" />
+    <Content Include="bootstrap-datepicker-1.9.0\css\bootstrap-datepicker.standalone.min.css" />
+    <Content Include="bootstrap-datepicker-1.9.0\css\bootstrap-datepicker3.css" />
+    <Content Include="bootstrap-datepicker-1.9.0\css\bootstrap-datepicker3.min.css" />
+    <Content Include="bootstrap-datepicker-1.9.0\css\bootstrap-datepicker3.standalone.css" />
+    <Content Include="bootstrap-datepicker-1.9.0\css\bootstrap-datepicker3.standalone.min.css" />
+    <Content Include="bootstrap-datepicker-1.9.0\js\bootstrap-datepicker.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\js\bootstrap-datepicker.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker-en-CA.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.ar-tn.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.ar.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.az.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.bg.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.bm.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.bn.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.br.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.bs.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.ca.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.cs.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.cy.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.da.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.de.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.el.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.en-AU.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.en-CA.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.en-GB.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.en-IE.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.en-NZ.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.en-ZA.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.eo.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.es.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.et.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.eu.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.fa.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.fi.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.fo.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.fr-CH.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.fr.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.gl.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.he.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.hi.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.hr.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.hu.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.hy.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.id.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.is.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.it-CH.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.it.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.ja.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.ka.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.kh.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.kk.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.km.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.ko.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.kr.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.lt.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.lv.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.me.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.mk.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.mn.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.ms.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.nl-BE.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.nl.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.no.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.oc.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.pl.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.pt-BR.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.pt.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.ro.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.rs-latin.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.rs.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.ru.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.si.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.sk.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.sl.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.sq.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.sr-latin.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.sr.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.sv.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.sw.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.ta.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.tg.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.th.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.tk.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.tr.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.uk.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.uz-cyrl.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.uz-latn.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.vi.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.zh-CN.min.js" />
+    <Content Include="bootstrap-datepicker-1.9.0\locales\bootstrap-datepicker.zh-TW.min.js" />
+    <Content Include="bootstrap5\css\bootstrap-grid.css" />
+    <Content Include="bootstrap5\css\bootstrap-grid.min.css" />
+    <Content Include="bootstrap5\css\bootstrap-grid.rtl.css" />
+    <Content Include="bootstrap5\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="bootstrap5\css\bootstrap-reboot.css" />
+    <Content Include="bootstrap5\css\bootstrap-reboot.min.css" />
+    <Content Include="bootstrap5\css\bootstrap-reboot.rtl.css" />
+    <Content Include="bootstrap5\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="bootstrap5\css\bootstrap-utilities.css" />
+    <Content Include="bootstrap5\css\bootstrap-utilities.min.css" />
+    <Content Include="bootstrap5\css\bootstrap-utilities.rtl.css" />
+    <Content Include="bootstrap5\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="bootstrap5\css\bootstrap.css" />
+    <Content Include="bootstrap5\css\bootstrap.min.css" />
+    <Content Include="bootstrap5\css\bootstrap.rtl.css" />
+    <Content Include="bootstrap5\css\bootstrap.rtl.min.css" />
+    <Content Include="bootstrap5\js\bootstrap.bundle.js" />
+    <Content Include="bootstrap5\js\bootstrap.bundle.min.js" />
+    <Content Include="bootstrap5\js\bootstrap.esm.js" />
+    <Content Include="bootstrap5\js\bootstrap.esm.min.js" />
+    <Content Include="bootstrap5\js\bootstrap.js" />
+    <Content Include="bootstrap5\js\bootstrap.min.js" />
+    <Content Include="bootstrap\css\bootstrap-theme.css" />
+    <Content Include="bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\js\npm.js" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="DataTables\datatables.css" />
+    <Content Include="DataTables\datatables.js" />
+    <Content Include="DataTables\datatables.min.css" />
+    <Content Include="DataTables\datatables.min.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="echarts-5.5.0\.github\workflows\.scripts\update-notice-year.js" />
+    <Content Include="echarts-5.5.0\asset\contributing-inspect.png" />
+    <Content Include="echarts-5.5.0\asset\logo.png" />
+    <Content Include="echarts-5.5.0\build\addHeader.js" />
+    <Content Include="echarts-5.5.0\build\build-i18n.js" />
+    <Content Include="echarts-5.5.0\build\build.js" />
+    <Content Include="echarts-5.5.0\build\config.js" />
+    <Content Include="echarts-5.5.0\build\dev-fast.js" />
+    <Content Include="echarts-5.5.0\build\nightly\post.js" />
+    <Content Include="echarts-5.5.0\build\nightly\prepare.js" />
+    <Content Include="echarts-5.5.0\build\pre-publish.js" />
+    <Content Include="echarts-5.5.0\build\preamble.js" />
+    <Content Include="echarts-5.5.0\build\source-release\prepareReleaseMaterials.js" />
+    <Content Include="echarts-5.5.0\build\template\charts.js" />
+    <Content Include="echarts-5.5.0\build\template\components.js" />
+    <Content Include="echarts-5.5.0\build\template\core.js" />
+    <Content Include="echarts-5.5.0\build\template\features.js" />
+    <Content Include="echarts-5.5.0\build\template\renderers.js" />
+    <Content Include="echarts-5.5.0\build\template\ssr\client\index.js" />
+    <Content Include="echarts-5.5.0\build\testDts.js" />
+    <Content Include="echarts-5.5.0\build\transform-dev.js" />
+    <Content Include="echarts-5.5.0\dist\echarts.common.js" />
+    <Content Include="echarts-5.5.0\dist\echarts.common.min.js" />
+    <Content Include="echarts-5.5.0\dist\echarts.esm.js" />
+    <Content Include="echarts-5.5.0\dist\echarts.esm.min.js" />
+    <Content Include="echarts-5.5.0\dist\echarts.esm.min.mjs" />
+    <Content Include="echarts-5.5.0\dist\echarts.esm.mjs" />
+    <Content Include="echarts-5.5.0\dist\echarts.js" />
+    <Content Include="echarts-5.5.0\dist\echarts.min.js" />
+    <Content Include="echarts-5.5.0\dist\echarts.simple.js" />
+    <Content Include="echarts-5.5.0\dist\echarts.simple.min.js" />
+    <Content Include="echarts-5.5.0\dist\extension\bmap.js" />
+    <Content Include="echarts-5.5.0\dist\extension\bmap.min.js" />
+    <Content Include="echarts-5.5.0\dist\extension\dataTool.js" />
+    <Content Include="echarts-5.5.0\dist\extension\dataTool.min.js" />
+    <Content Include="echarts-5.5.0\i18n\langAR-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langAR.js" />
+    <Content Include="echarts-5.5.0\i18n\langCS-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langCS.js" />
+    <Content Include="echarts-5.5.0\i18n\langDE-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langDE.js" />
+    <Content Include="echarts-5.5.0\i18n\langEN-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langEN.js" />
+    <Content Include="echarts-5.5.0\i18n\langES-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langES.js" />
+    <Content Include="echarts-5.5.0\i18n\langFI-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langFI.js" />
+    <Content Include="echarts-5.5.0\i18n\langFR-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langFR.js" />
+    <Content Include="echarts-5.5.0\i18n\langHU-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langHU.js" />
+    <Content Include="echarts-5.5.0\i18n\langIT-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langIT.js" />
+    <Content Include="echarts-5.5.0\i18n\langJA-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langJA.js" />
+    <Content Include="echarts-5.5.0\i18n\langKO-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langKO.js" />
+    <Content Include="echarts-5.5.0\i18n\langNL-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langNL.js" />
+    <Content Include="echarts-5.5.0\i18n\langPL-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langPL.js" />
+    <Content Include="echarts-5.5.0\i18n\langPT-br-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langPT-br.js" />
+    <Content Include="echarts-5.5.0\i18n\langRO-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langRO.js" />
+    <Content Include="echarts-5.5.0\i18n\langRU-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langRU.js" />
+    <Content Include="echarts-5.5.0\i18n\langSI-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langSI.js" />
+    <Content Include="echarts-5.5.0\i18n\langTH-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langTH.js" />
+    <Content Include="echarts-5.5.0\i18n\langTR-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langTR.js" />
+    <Content Include="echarts-5.5.0\i18n\langUK-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langUK.js" />
+    <Content Include="echarts-5.5.0\i18n\langVI-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langVI.js" />
+    <Content Include="echarts-5.5.0\i18n\langZH-obj.js" />
+    <Content Include="echarts-5.5.0\i18n\langZH.js" />
+    <Content Include="echarts-5.5.0\ssr\client\dist\index.js" />
+    <Content Include="echarts-5.5.0\test\-cases.html" />
+    <Content Include="echarts-5.5.0\test\-cases.js" />
+    <Content Include="echarts-5.5.0\test\allZero.html" />
+    <Content Include="echarts-5.5.0\test\animation-additive.html" />
+    <Content Include="echarts-5.5.0\test\appendData.html" />
+    <Content Include="echarts-5.5.0\test\area-large.html" />
+    <Content Include="echarts-5.5.0\test\area-origin.html" />
+    <Content Include="echarts-5.5.0\test\area-smooth.html" />
+    <Content Include="echarts-5.5.0\test\area-stack.html" />
+    <Content Include="echarts-5.5.0\test\area2.html" />
+    <Content Include="echarts-5.5.0\test\areaLineUpdate.html" />
+    <Content Include="echarts-5.5.0\test\aria-line-bar.html" />
+    <Content Include="echarts-5.5.0\test\aria-pie.html" />
+    <Content Include="echarts-5.5.0\test\asset\echarts-logo.png" />
+    <Content Include="echarts-5.5.0\test\axes.html" />
+    <Content Include="echarts-5.5.0\test\axis-align-lastLabel.html" />
+    <Content Include="echarts-5.5.0\test\axis-align-ticks-random.html" />
+    <Content Include="echarts-5.5.0\test\axis-align-ticks.html" />
+    <Content Include="echarts-5.5.0\test\axis-arrow.html" />
+    <Content Include="echarts-5.5.0\test\axis-boundaryGap.html" />
+    <Content Include="echarts-5.5.0\test\axis-containLabel.html" />
+    <Content Include="echarts-5.5.0\test\axis-containLabel2.html" />
+    <Content Include="echarts-5.5.0\test\axis-extrema.html" />
+    <Content Include="echarts-5.5.0\test\axis-filter-extent.html" />
+    <Content Include="echarts-5.5.0\test\axis-filter-extent2.html" />
+    <Content Include="echarts-5.5.0\test\axis-interval.html" />
+    <Content Include="echarts-5.5.0\test\axis-interval2.html" />
+    <Content Include="echarts-5.5.0\test\axis-lastLabel.html" />
+    <Content Include="echarts-5.5.0\test\axis-minorTick.html" />
+    <Content Include="echarts-5.5.0\test\axis-multiple.html" />
+    <Content Include="echarts-5.5.0\test\axis-name.html" />
+    <Content Include="echarts-5.5.0\test\axis-splitArea.html" />
+    <Content Include="echarts-5.5.0\test\axis-style.html" />
+    <Content Include="echarts-5.5.0\test\axis.html" />
+    <Content Include="echarts-5.5.0\test\axisLabel.html" />
+    <Content Include="echarts-5.5.0\test\axisPosition.html" />
+    <Content Include="echarts-5.5.0\test\bar-background.html" />
+    <Content Include="echarts-5.5.0\test\bar-label-rotation.html" />
+    <Content Include="echarts-5.5.0\test\bar-large.html" />
+    <Content Include="echarts-5.5.0\test\bar-log.html" />
+    <Content Include="echarts-5.5.0\test\bar-markArea.html" />
+    <Content Include="echarts-5.5.0\test\bar-others.html" />
+    <Content Include="echarts-5.5.0\test\bar-overflow-time-plot.html" />
+    <Content Include="echarts-5.5.0\test\bar-polar-animation.html" />
+    <Content Include="echarts-5.5.0\test\bar-polar-basic-radial.html" />
+    <Content Include="echarts-5.5.0\test\bar-polar-borderRadius.html" />
+    <Content Include="echarts-5.5.0\test\bar-polar-clockwise.html" />
+    <Content Include="echarts-5.5.0\test\bar-polar-label.html" />
+    <Content Include="echarts-5.5.0\test\bar-polar-long-label.html" />
+    <Content Include="echarts-5.5.0\test\bar-polar-multi-series-radial.html" />
+    <Content Include="echarts-5.5.0\test\bar-polar-multi-series.html" />
+    <Content Include="echarts-5.5.0\test\bar-polar-null-data-radial.html" />
+    <Content Include="echarts-5.5.0\test\bar-polar-null-data.html" />
+    <Content Include="echarts-5.5.0\test\bar-polar-real-estate.html" />
+    <Content Include="echarts-5.5.0\test\bar-polar-stack.html" />
+    <Content Include="echarts-5.5.0\test\bar-race.html" />
+    <Content Include="echarts-5.5.0\test\bar-race2.html" />
+    <Content Include="echarts-5.5.0\test\bar-stack.html" />
+    <Content Include="echarts-5.5.0\test\bar-start.html" />
+    <Content Include="echarts-5.5.0\test\bar-stream-large.html" />
+    <Content Include="echarts-5.5.0\test\bar-stream-large1.html" />
+    <Content Include="echarts-5.5.0\test\bar-t.html" />
+    <Content Include="echarts-5.5.0\test\bar-tooltip-performance.html" />
+    <Content Include="echarts-5.5.0\test\bar-width.html" />
+    <Content Include="echarts-5.5.0\test\bar.html" />
+    <Content Include="echarts-5.5.0\test\bar2.html" />
+    <Content Include="echarts-5.5.0\test\bar3.html" />
+    <Content Include="echarts-5.5.0\test\bmap-mapOptions.html" />
+    <Content Include="echarts-5.5.0\test\bmap.html" />
+    <Content Include="echarts-5.5.0\test\bmap2.html" />
+    <Content Include="echarts-5.5.0\test\boxplot-multi.html" />
+    <Content Include="echarts-5.5.0\test\boxplot.html" />
+    <Content Include="echarts-5.5.0\test\browser-esm-partial.html" />
+    <Content Include="echarts-5.5.0\test\browser-esm-partial2.html" />
+    <Content Include="echarts-5.5.0\test\browser-esm.html" />
+    <Content Include="echarts-5.5.0\test\browser-esm2.html" />
+    <Content Include="echarts-5.5.0\test\brush.html" />
+    <Content Include="echarts-5.5.0\test\brush2.html" />
+    <Content Include="echarts-5.5.0\test\brush3.html" />
+    <Content Include="echarts-5.5.0\test\build\esm2cjs\expect\basic.expect.js" />
+    <Content Include="echarts-5.5.0\test\build\esm2cjs\expect\export-default0.expect.js" />
+    <Content Include="echarts-5.5.0\test\build\esm2cjs\expect\export-default1.expect.js" />
+    <Content Include="echarts-5.5.0\test\build\esm2cjs\expect\export-default2.expect.js" />
+    <Content Include="echarts-5.5.0\test\build\esm2cjs\expect\export-default3.expect.js" />
+    <Content Include="echarts-5.5.0\test\build\esm2cjs\expect\forbiden-export.expect.js" />
+    <Content Include="echarts-5.5.0\test\build\esm2cjs\src\basic.src.js" />
+    <Content Include="echarts-5.5.0\test\build\esm2cjs\src\export-default0.src.js" />
+    <Content Include="echarts-5.5.0\test\build\esm2cjs\src\export-default1.src.js" />
+    <Content Include="echarts-5.5.0\test\build\esm2cjs\src\export-default2.src.js" />
+    <Content Include="echarts-5.5.0\test\build\esm2cjs\src\export-default3.src.js" />
+    <Content Include="echarts-5.5.0\test\build\esm2cjs\src\forbiden-export.src.js" />
+    <Content Include="echarts-5.5.0\test\build\mktest-tpl.html" />
+    <Content Include="echarts-5.5.0\test\build\mktest.js" />
+    <Content Include="echarts-5.5.0\test\build\removeDEV\expect\code.expect.js" />
+    <Content Include="echarts-5.5.0\test\build\removeDEV\src\code.src.js" />
+    <Content Include="echarts-5.5.0\test\build\test-transform.js" />
+    <Content Include="echarts-5.5.0\test\calendar-converter.html" />
+    <Content Include="echarts-5.5.0\test\calendar-effectScater.html" />
+    <Content Include="echarts-5.5.0\test\calendar-graph.html" />
+    <Content Include="echarts-5.5.0\test\calendar-heatmap.html" />
+    <Content Include="echarts-5.5.0\test\calendar-month.html" />
+    <Content Include="echarts-5.5.0\test\calendar-more.html" />
+    <Content Include="echarts-5.5.0\test\calendar-orient.html" />
+    <Content Include="echarts-5.5.0\test\calendar-range.html" />
+    <Content Include="echarts-5.5.0\test\calendar-scatter.html" />
+    <Content Include="echarts-5.5.0\test\calendar-simple.html" />
+    <Content Include="echarts-5.5.0\test\calendar-size.html" />
+    <Content Include="echarts-5.5.0\test\calendar-split.html" />
+    <Content Include="echarts-5.5.0\test\calendar-timezone.html" />
+    <Content Include="echarts-5.5.0\test\calendar-type.html" />
+    <Content Include="echarts-5.5.0\test\calendar-vertical.html" />
+    <Content Include="echarts-5.5.0\test\calendar-week.html" />
+    <Content Include="echarts-5.5.0\test\calendar-year.html" />
+    <Content Include="echarts-5.5.0\test\calendar.html" />
+    <Content Include="echarts-5.5.0\test\candlestick-case.html" />
+    <Content Include="echarts-5.5.0\test\candlestick-doji.html" />
+    <Content Include="echarts-5.5.0\test\candlestick-empty.html" />
+    <Content Include="echarts-5.5.0\test\candlestick-large.html" />
+    <Content Include="echarts-5.5.0\test\candlestick-large2.html" />
+    <Content Include="echarts-5.5.0\test\candlestick-large3.html" />
+    <Content Include="echarts-5.5.0\test\candlestick.html" />
+    <Content Include="echarts-5.5.0\test\candlestickConnect.html" />
+    <Content Include="echarts-5.5.0\test\canvas-replay.html" />
+    <Content Include="echarts-5.5.0\test\check-build.html" />
+    <Content Include="echarts-5.5.0\test\circle-packing-with-d3.compat.html" />
+    <Content Include="echarts-5.5.0\test\circle-packing-with-d3.html" />
+    <Content Include="echarts-5.5.0\test\clip-large1.html" />
+    <Content Include="echarts-5.5.0\test\clip-line-cap.html" />
+    <Content Include="echarts-5.5.0\test\clip.html" />
+    <Content Include="echarts-5.5.0\test\clip2.html" />
+    <Content Include="echarts-5.5.0\test\coarse-pointer.html" />
+    <Content Include="echarts-5.5.0\test\color-mix-aqi.html" />
+    <Content Include="echarts-5.5.0\test\colorBy.html" />
+    <Content Include="echarts-5.5.0\test\connect-dynamic.html" />
+    <Content Include="echarts-5.5.0\test\connect-manually.html" />
+    <Content Include="echarts-5.5.0\test\connect.html" />
+    <Content Include="echarts-5.5.0\test\connect2.html" />
+    <Content Include="echarts-5.5.0\test\covid-america.html" />
+    <Content Include="echarts-5.5.0\test\css-transform.html" />
+    <Content Include="echarts-5.5.0\test\custom-animation.html" />
+    <Content Include="echarts-5.5.0\test\custom-bmap-grid.html" />
+    <Content Include="echarts-5.5.0\test\custom-bmap-polygon.html" />
+    <Content Include="echarts-5.5.0\test\custom-children-remove.html" />
+    <Content Include="echarts-5.5.0\test\custom-feature.html" />
+    <Content Include="echarts-5.5.0\test\custom-hexbin.html" />
+    <Content Include="echarts-5.5.0\test\custom-large.html" />
+    <Content Include="echarts-5.5.0\test\custom-shape-morphing.html" />
+    <Content Include="echarts-5.5.0\test\custom-shape-morphing2.html" />
+    <Content Include="echarts-5.5.0\test\custom-shape-morphing3.html" />
+    <Content Include="echarts-5.5.0\test\custom-text-content.html" />
+    <Content Include="echarts-5.5.0\test\custom-transition-ecStat.html" />
+    <Content Include="echarts-5.5.0\test\custom-transition-texture.js" />
+    <Content Include="echarts-5.5.0\test\custom-transition.html" />
+    <Content Include="echarts-5.5.0\test\custom-transition2.html" />
+    <Content Include="echarts-5.5.0\test\custom-update.html" />
+    <Content Include="echarts-5.5.0\test\custom.html" />
+    <Content Include="echarts-5.5.0\test\data-transform-aggregate.html" />
+    <Content Include="echarts-5.5.0\test\data-transform-ecStat.html" />
+    <Content Include="echarts-5.5.0\test\data-transform.html" />
+    <Content Include="echarts-5.5.0\test\dataSelect.html" />
+    <Content Include="echarts-5.5.0\test\dataset-case.html" />
+    <Content Include="echarts-5.5.0\test\dataset-category.html" />
+    <Content Include="echarts-5.5.0\test\dataset-charts.html" />
+    <Content Include="echarts-5.5.0\test\dataset-guess.html" />
+    <Content Include="echarts-5.5.0\test\dataset-layout.html" />
+    <Content Include="echarts-5.5.0\test\dataset-performance.html" />
+    <Content Include="echarts-5.5.0\test\dataset-pivot.html" />
+    <Content Include="echarts-5.5.0\test\dataset-source-two-typed-array.html" />
+    <Content Include="echarts-5.5.0\test\dataView.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-action.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-axes.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-axis-type.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-cartesian-h.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-cartesian-v.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-clip.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-dataShadow.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-dataShadow0.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-dataShadow1.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-dataShadow2.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-dynamic.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-extreme.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-feature.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-geo.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-rainfall-connect.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-rainfall-inside.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-rainfall.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-scatter-category.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-scatter-hv-polar.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-scatter-hv.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-scroll.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-sync.html" />
+    <Content Include="echarts-5.5.0\test\dataZoom-toolbox.html" />
+    <Content Include="echarts-5.5.0\test\dataZoomHighPrecision.html" />
+    <Content Include="echarts-5.5.0\test\data\aqi\BJdata.js" />
+    <Content Include="echarts-5.5.0\test\data\aqi\GZdata.js" />
+    <Content Include="echarts-5.5.0\test\data\aqi\processAQI.js" />
+    <Content Include="echarts-5.5.0\test\data\aqi\SHdata.js" />
+    <Content Include="echarts-5.5.0\test\data\basicChartsOptions.js" />
+    <Content Include="echarts-5.5.0\test\data\disk.tree.js" />
+    <Content Include="echarts-5.5.0\test\data\handle.png" />
+    <Content Include="echarts-5.5.0\test\data\handle2.png" />
+    <Content Include="echarts-5.5.0\test\data\hill-Kilimanjaro.png" />
+    <Content Include="echarts-5.5.0\test\data\hill-Qomolangma.png" />
+    <Content Include="echarts-5.5.0\test\data\iphone.png" />
+    <Content Include="echarts-5.5.0\test\data\map\cli.js" />
+    <Content Include="echarts-5.5.0\test\data\map\decode.js" />
+    <Content Include="echarts-5.5.0\test\data\map\encode.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\china-contour.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\china.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\anhui.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\aomen.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\beijing.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\chongqing.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\fujian.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\gansu.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\guangdong.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\guangxi.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\guizhou.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\hainan.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\hebei.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\heilongjiang.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\henan.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\hubei.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\hunan.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\jiangsu.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\jiangxi.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\jilin.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\liaoning.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\neimenggu.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\ningxia.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\qinghai.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\shandong.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\shanghai.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\shanxi.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\shanxi1.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\sichuan.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\taiwan.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\tianjin.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\xianggang.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\xinjiang.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\xizang.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\yunnan.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\province\zhejiang.js" />
+    <Content Include="echarts-5.5.0\test\data\map\js\world.js" />
+    <Content Include="echarts-5.5.0\test\data\map_custom.js" />
+    <Content Include="echarts-5.5.0\test\data\Michelson-Morley.json.js" />
+    <Content Include="echarts-5.5.0\test\data\obama_budget_proposal_2012.tree.js" />
+    <Content Include="echarts-5.5.0\test\data\pie-texture.js" />
+    <Content Include="echarts-5.5.0\test\data\rainfall.json.js" />
+    <Content Include="echarts-5.5.0\test\data\security-sh-2013.json.js" />
+    <Content Include="echarts-5.5.0\test\data\stock-DJI.json.js" />
+    <Content Include="echarts-5.5.0\test\data\svg\Beef_cuts_France.svg" />
+    <Content Include="echarts-5.5.0\test\data\svg\flight-seats.svg" />
+    <Content Include="echarts-5.5.0\test\data\svg\ksia-ext-plan-min.svg" />
+    <Content Include="echarts-5.5.0\test\data\svg\MacOdrum-LV5-floorplan-web.svg" />
+    <Content Include="echarts-5.5.0\test\data\svg\Map_of_Iceland.svg" />
+    <Content Include="echarts-5.5.0\test\data\svg\seatmap-example.svg" />
+    <Content Include="echarts-5.5.0\test\data\svg\Sicily_prehellenic_topographic_map.svg" />
+    <Content Include="echarts-5.5.0\test\data\svg\Veins_Medical_Diagram_clip_art.svg" />
+    <Content Include="echarts-5.5.0\test\data\symbols.js" />
+    <Content Include="echarts-5.5.0\test\data\timelineGDP.js" />
+    <Content Include="echarts-5.5.0\test\data\weather\cloudy_128.png" />
+    <Content Include="echarts-5.5.0\test\data\weather\showers_128.png" />
+    <Content Include="echarts-5.5.0\test\data\weather\sunny_128.png" />
+    <Content Include="echarts-5.5.0\test\decal.html" />
+    <Content Include="echarts-5.5.0\test\diff.html" />
+    <Content Include="echarts-5.5.0\test\drag-out.html" />
+    <Content Include="echarts-5.5.0\test\dynamic-splitNumber.html" />
+    <Content Include="echarts-5.5.0\test\dynamicData.html" />
+    <Content Include="echarts-5.5.0\test\dynamicData2.html" />
+    <Content Include="echarts-5.5.0\test\dynamicData3.html" />
+    <Content Include="echarts-5.5.0\test\ec-event.html" />
+    <Content Include="echarts-5.5.0\test\effectScatter.html" />
+    <Content Include="echarts-5.5.0\test\effectScatter2.html" />
+    <Content Include="echarts-5.5.0\test\emphasis-disabled.html" />
+    <Content Include="echarts-5.5.0\test\emphasis-inherit.html" />
+    <Content Include="echarts-5.5.0\test\emphasis-self.html" />
+    <Content Include="echarts-5.5.0\test\encode.html" />
+    <Content Include="echarts-5.5.0\test\finished-gl.html" />
+    <Content Include="echarts-5.5.0\test\finished.html" />
+    <Content Include="echarts-5.5.0\test\force-case.html" />
+    <Content Include="echarts-5.5.0\test\force-edge-ignoreLayout.html" />
+    <Content Include="echarts-5.5.0\test\force-friction.html" />
+    <Content Include="echarts-5.5.0\test\force.html" />
+    <Content Include="echarts-5.5.0\test\force2.html" />
+    <Content Include="echarts-5.5.0\test\force3.html" />
+    <Content Include="echarts-5.5.0\test\funnel.html" />
+    <Content Include="echarts-5.5.0\test\gauge-case.html" />
+    <Content Include="echarts-5.5.0\test\gauge-distance.html" />
+    <Content Include="echarts-5.5.0\test\gauge-group-title-detail.html" />
+    <Content Include="echarts-5.5.0\test\gauge-pointer.html" />
+    <Content Include="echarts-5.5.0\test\gauge-progress.html" />
+    <Content Include="echarts-5.5.0\test\gauge-simple.html" />
+    <Content Include="echarts-5.5.0\test\gauge.html" />
+    <Content Include="echarts-5.5.0\test\geo-data-stream.html" />
+    <Content Include="echarts-5.5.0\test\geo-labelFormatter.html" />
+    <Content Include="echarts-5.5.0\test\geo-layout.html" />
+    <Content Include="echarts-5.5.0\test\geo-lines.html" />
+    <Content Include="echarts-5.5.0\test\geo-map-features.html" />
+    <Content Include="echarts-5.5.0\test\geo-map.html" />
+    <Content Include="echarts-5.5.0\test\geo-random-stream.html" />
+    <Content Include="echarts-5.5.0\test\geo-svg-demo.html" />
+    <Content Include="echarts-5.5.0\test\geo-svg.html" />
+    <Content Include="echarts-5.5.0\test\geo-update.html" />
+    <Content Include="echarts-5.5.0\test\geojson-test.html" />
+    <Content Include="echarts-5.5.0\test\geoLine.html" />
+    <Content Include="echarts-5.5.0\test\geoScatter.html" />
+    <Content Include="echarts-5.5.0\test\getOption.html" />
+    <Content Include="echarts-5.5.0\test\graph-case.html" />
+    <Content Include="echarts-5.5.0\test\graph-circular.html" />
+    <Content Include="echarts-5.5.0\test\graph-draggable.html" />
+    <Content Include="echarts-5.5.0\test\graph-edge-highlight.html" />
+    <Content Include="echarts-5.5.0\test\graph-grid-life.html" />
+    <Content Include="echarts-5.5.0\test\graph-grid.html" />
+    <Content Include="echarts-5.5.0\test\graph-label-rotate.html" />
+    <Content Include="echarts-5.5.0\test\graph-multiple-edges.html" />
+    <Content Include="echarts-5.5.0\test\graph-simple.html" />
+    <Content Include="echarts-5.5.0\test\graph-symbol.html" />
+    <Content Include="echarts-5.5.0\test\graph.html" />
+    <Content Include="echarts-5.5.0\test\graphic-animation-wave.html" />
+    <Content Include="echarts-5.5.0\test\graphic-animation.html" />
+    <Content Include="echarts-5.5.0\test\graphic-cases.html" />
+    <Content Include="echarts-5.5.0\test\graphic-draggable.html" />
+    <Content Include="echarts-5.5.0\test\graphic-transition.html" />
+    <Content Include="echarts-5.5.0\test\graphicOption.html" />
+    <Content Include="echarts-5.5.0\test\graphicRemove.html" />
+    <Content Include="echarts-5.5.0\test\gridSimple.html" />
+    <Content Include="echarts-5.5.0\test\heatmap-borderRadius.html" />
+    <Content Include="echarts-5.5.0\test\heatmap-gap-bug.html" />
+    <Content Include="echarts-5.5.0\test\heatmap-geo.html" />
+    <Content Include="echarts-5.5.0\test\heatmap-large.html" />
+    <Content Include="echarts-5.5.0\test\heatmap-map.html" />
+    <Content Include="echarts-5.5.0\test\heatmap.html" />
+    <Content Include="echarts-5.5.0\test\homepage3.html" />
+    <Content Include="echarts-5.5.0\test\homepage3.js" />
+    <Content Include="echarts-5.5.0\test\hoverFocus.html" />
+    <Content Include="echarts-5.5.0\test\hoverFocus2.html" />
+    <Content Include="echarts-5.5.0\test\hoverStyle.html" />
+    <Content Include="echarts-5.5.0\test\hoverStyle2.html" />
+    <Content Include="echarts-5.5.0\test\ie-svg-export.html" />
+    <Content Include="echarts-5.5.0\test\ie11.html" />
+    <Content Include="echarts-5.5.0\test\ios13-z-bug.html" />
+    <Content Include="echarts-5.5.0\test\label-animation.html" />
+    <Content Include="echarts-5.5.0\test\label-ellipsis.html" />
+    <Content Include="echarts-5.5.0\test\label-formatter.html" />
+    <Content Include="echarts-5.5.0\test\label-layout.html" />
+    <Content Include="echarts-5.5.0\test\label-position.html" />
+    <Content Include="echarts-5.5.0\test\lang.html" />
+    <Content Include="echarts-5.5.0\test\largeLine-tooltip.html" />
+    <Content Include="echarts-5.5.0\test\largeLine.html" />
+    <Content Include="echarts-5.5.0\test\largeScatterWithEmpty.html" />
+    <Content Include="echarts-5.5.0\test\lazyUpdate.html" />
+    <Content Include="echarts-5.5.0\test\legend-borderColor.html" />
+    <Content Include="echarts-5.5.0\test\legend-feature.html" />
+    <Content Include="echarts-5.5.0\test\legend-scroll2plain.html" />
+    <Content Include="echarts-5.5.0\test\legend-style.html" />
+    <Content Include="echarts-5.5.0\test\legend-visualMapColor.html" />
+    <Content Include="echarts-5.5.0\test\legend.html" />
+    <Content Include="echarts-5.5.0\test\lib\canteen.js" />
+    <Content Include="echarts-5.5.0\test\lib\caseFrame.css" />
+    <Content Include="echarts-5.5.0\test\lib\caseFrame.js" />
+    <Content Include="echarts-5.5.0\test\lib\config.js" />
+    <Content Include="echarts-5.5.0\test\lib\countup.js" />
+    <Content Include="echarts-5.5.0\test\lib\dat.gui.min.js" />
+    <Content Include="echarts-5.5.0\test\lib\draggable.js" />
+    <Content Include="echarts-5.5.0\test\lib\ecSimpleOptionPlayer.js" />
+    <Content Include="echarts-5.5.0\test\lib\ecSimpleTransform.js" />
+    <Content Include="echarts-5.5.0\test\lib\ecStat-1.1.1.min.js" />
+    <Content Include="echarts-5.5.0\test\lib\ecStat.min.js" />
+    <Content Include="echarts-5.5.0\test\lib\facePrint.js" />
+    <Content Include="echarts-5.5.0\test\lib\frameInsight.js" />
+    <Content Include="echarts-5.5.0\test\lib\jquery.min.js" />
+    <Content Include="echarts-5.5.0\test\lib\perlin.js" />
+    <Content Include="echarts-5.5.0\test\lib\rearrange.js" />
+    <Content Include="echarts-5.5.0\test\lib\reset.css" />
+    <Content Include="echarts-5.5.0\test\lib\simpleRequire.js" />
+    <Content Include="echarts-5.5.0\test\lib\testHelper.js" />
+    <Content Include="echarts-5.5.0\test\line-animation-update.html" />
+    <Content Include="echarts-5.5.0\test\line-animation.html" />
+    <Content Include="echarts-5.5.0\test\line-boldWhenHover.html" />
+    <Content Include="echarts-5.5.0\test\line-case.html" />
+    <Content Include="echarts-5.5.0\test\line-crash.html" />
+    <Content Include="echarts-5.5.0\test\line-endLabel.html" />
+    <Content Include="echarts-5.5.0\test\line-large.html" />
+    <Content Include="echarts-5.5.0\test\line-non-continuous.html" />
+    <Content Include="echarts-5.5.0\test\line-sampling.html" />
+    <Content Include="echarts-5.5.0\test\line-step.html" />
+    <Content Include="echarts-5.5.0\test\line-style.html" />
+    <Content Include="echarts-5.5.0\test\line-visual.html" />
+    <Content Include="echarts-5.5.0\test\line-visual2.html" />
+    <Content Include="echarts-5.5.0\test\line.html" />
+    <Content Include="echarts-5.5.0\test\lines-bus.html" />
+    <Content Include="echarts-5.5.0\test\lines-flight.html" />
+    <Content Include="echarts-5.5.0\test\lines-graph.html" />
+    <Content Include="echarts-5.5.0\test\lines-grid.html" />
+    <Content Include="echarts-5.5.0\test\lines-mergeOption.html" />
+    <Content Include="echarts-5.5.0\test\lines-ny-appendData.html" />
+    <Content Include="echarts-5.5.0\test\lines-ny.html" />
+    <Content Include="echarts-5.5.0\test\lines-remove.html" />
+    <Content Include="echarts-5.5.0\test\lines-stream-large.html" />
+    <Content Include="echarts-5.5.0\test\lines-stream-not-large.html" />
+    <Content Include="echarts-5.5.0\test\lines-symbol.html" />
+    <Content Include="echarts-5.5.0\test\lines-symbolSize-update.html" />
+    <Content Include="echarts-5.5.0\test\lines-track.html" />
+    <Content Include="echarts-5.5.0\test\linesGL-ny-appendData.html" />
+    <Content Include="echarts-5.5.0\test\loading.html" />
+    <Content Include="echarts-5.5.0\test\logScale.html" />
+    <Content Include="echarts-5.5.0\test\manual-svg-color-bug-202311.html" />
+    <Content Include="echarts-5.5.0\test\map-china.html" />
+    <Content Include="echarts-5.5.0\test\map-contour.html" />
+    <Content Include="echarts-5.5.0\test\map-default.html" />
+    <Content Include="echarts-5.5.0\test\map-grid.html" />
+    <Content Include="echarts-5.5.0\test\map-labels.html" />
+    <Content Include="echarts-5.5.0\test\map-locate.html" />
+    <Content Include="echarts-5.5.0\test\map-nameProperty.html" />
+    <Content Include="echarts-5.5.0\test\map-nested.html" />
+    <Content Include="echarts-5.5.0\test\map-parallel.html" />
+    <Content Include="echarts-5.5.0\test\map-projection-animation.html" />
+    <Content Include="echarts-5.5.0\test\map-projection-d3.html" />
+    <Content Include="echarts-5.5.0\test\map-projection.html" />
+    <Content Include="echarts-5.5.0\test\map-province.html" />
+    <Content Include="echarts-5.5.0\test\map.html" />
+    <Content Include="echarts-5.5.0\test\mapWorld.html" />
+    <Content Include="echarts-5.5.0\test\markArea.html" />
+    <Content Include="echarts-5.5.0\test\marker-case.html" />
+    <Content Include="echarts-5.5.0\test\markLine-subPixel.html" />
+    <Content Include="echarts-5.5.0\test\markLine-symbolRotate.html" />
+    <Content Include="echarts-5.5.0\test\markLine.html" />
+    <Content Include="echarts-5.5.0\test\markPoint.html" />
+    <Content Include="echarts-5.5.0\test\masterPainterColorChoice.html" />
+    <Content Include="echarts-5.5.0\test\media-dataZoom.html" />
+    <Content Include="echarts-5.5.0\test\media-finance.html" />
+    <Content Include="echarts-5.5.0\test\media-pie.html" />
+    <Content Include="echarts-5.5.0\test\min-max-function.html" />
+    <Content Include="echarts-5.5.0\test\mix.html" />
+    <Content Include="echarts-5.5.0\test\mobileBench.html" />
+    <Content Include="echarts-5.5.0\test\multipleGrid.html" />
+    <Content Include="echarts-5.5.0\test\new-tooltip.html" />
+    <Content Include="echarts-5.5.0\test\node\scatter-gps.js" />
+    <Content Include="echarts-5.5.0\test\node\ssr.js" />
+    <Content Include="echarts-5.5.0\test\option-replaceMerge.html" />
+    <Content Include="echarts-5.5.0\test\option-replaceMerge2.html" />
+    <Content Include="echarts-5.5.0\test\parallel-aqi.html" />
+    <Content Include="echarts-5.5.0\test\parallel-feature.html" />
+    <Content Include="echarts-5.5.0\test\parallel-large.html" />
+    <Content Include="echarts-5.5.0\test\parallel-lineStyle.html" />
+    <Content Include="echarts-5.5.0\test\parallel-nutrients.html" />
+    <Content Include="echarts-5.5.0\test\pictorial-repeat.html" />
+    <Content Include="echarts-5.5.0\test\pictorial-single.html" />
+    <Content Include="echarts-5.5.0\test\pictorial-svg.html" />
+    <Content Include="echarts-5.5.0\test\pictorial-zero-value-offset.html" />
+    <Content Include="echarts-5.5.0\test\pictorial-zero-value.html" />
+    <Content Include="echarts-5.5.0\test\pie-action.html" />
+    <Content Include="echarts-5.5.0\test\pie-animation.html" />
+    <Content Include="echarts-5.5.0\test\pie-calculable.html" />
+    <Content Include="echarts-5.5.0\test\pie-case.html" />
+    <Content Include="echarts-5.5.0\test\pie-clipPath.html" />
+    <Content Include="echarts-5.5.0\test\pie-coordinate-system.html" />
+    <Content Include="echarts-5.5.0\test\pie-cornerRadius.html" />
+    <Content Include="echarts-5.5.0\test\pie-dataView.html" />
+    <Content Include="echarts-5.5.0\test\pie-digits.html" />
+    <Content Include="echarts-5.5.0\test\pie-endAngle.html" />
+    <Content Include="echarts-5.5.0\test\pie-label-alignTo-adjust.html" />
+    <Content Include="echarts-5.5.0\test\pie-label-alignTo.html" />
+    <Content Include="echarts-5.5.0\test\pie-label-extreme.html" />
+    <Content Include="echarts-5.5.0\test\pie-label-mobile.html" />
+    <Content Include="echarts-5.5.0\test\pie-label-rotate.html" />
+    <Content Include="echarts-5.5.0\test\pie-label.html" />
+    <Content Include="echarts-5.5.0\test\pie-negative-value.html" />
+    <Content Include="echarts-5.5.0\test\pie-pad-angle.html" />
+    <Content Include="echarts-5.5.0\test\pie-percent.html" />
+    <Content Include="echarts-5.5.0\test\pie-richText.html" />
+    <Content Include="echarts-5.5.0\test\pie-visual.html" />
+    <Content Include="echarts-5.5.0\test\pie.html" />
+    <Content Include="echarts-5.5.0\test\pie2.html" />
+    <Content Include="echarts-5.5.0\test\pie3.html" />
+    <Content Include="echarts-5.5.0\test\pieDynamic.html" />
+    <Content Include="echarts-5.5.0\test\polar-end-angle.html" />
+    <Content Include="echarts-5.5.0\test\polar-rounded.html" />
+    <Content Include="echarts-5.5.0\test\polarLine.html" />
+    <Content Include="echarts-5.5.0\test\polarLine2.html" />
+    <Content Include="echarts-5.5.0\test\polarScatter.html" />
+    <Content Include="echarts-5.5.0\test\polyline-gon-event.html" />
+    <Content Include="echarts-5.5.0\test\punchCard.html" />
+    <Content Include="echarts-5.5.0\test\radar-axis.html" />
+    <Content Include="echarts-5.5.0\test\radar.html" />
+    <Content Include="echarts-5.5.0\test\radar2.html" />
+    <Content Include="echarts-5.5.0\test\radar3.html" />
+    <Content Include="echarts-5.5.0\test\radar4.html" />
+    <Content Include="echarts-5.5.0\test\resize-animation.html" />
+    <Content Include="echarts-5.5.0\test\richText-fontsize.html" />
+    <Content Include="echarts-5.5.0\test\richText.html" />
+    <Content Include="echarts-5.5.0\test\roseExtreme.html" />
+    <Content Include="echarts-5.5.0\test\roseType-labeline.html" />
+    <Content Include="echarts-5.5.0\test\roseType.html" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\update.js" />
+    <Content Include="echarts-5.5.0\test\runTest\blacklist.js" />
+    <Content Include="echarts-5.5.0\test\runTest\cli.js" />
+    <Content Include="echarts-5.5.0\test\runTest\client\client.css" />
+    <Content Include="echarts-5.5.0\test\runTest\client\client.js" />
+    <Content Include="echarts-5.5.0\test\runTest\client\index.html" />
+    <Content Include="echarts-5.5.0\test\runTest\compareScreenshot.js" />
+    <Content Include="echarts-5.5.0\test\runTest\config.js" />
+    <Content Include="echarts-5.5.0\test\runTest\genReport.js" />
+    <Content Include="echarts-5.5.0\test\runTest\recorder\index.html" />
+    <Content Include="echarts-5.5.0\test\runTest\recorder\recorder.css" />
+    <Content Include="echarts-5.5.0\test\runTest\recorder\recorder.js" />
+    <Content Include="echarts-5.5.0\test\runTest\runtime\ActionPlayback.js" />
+    <Content Include="echarts-5.5.0\test\runTest\runtime\main.js" />
+    <Content Include="echarts-5.5.0\test\runTest\runtime\shim.js" />
+    <Content Include="echarts-5.5.0\test\runTest\runtime\timeline.js" />
+    <Content Include="echarts-5.5.0\test\runTest\server.js" />
+    <Content Include="echarts-5.5.0\test\runTest\store.js" />
+    <Content Include="echarts-5.5.0\test\runTest\task.js" />
+    <Content Include="echarts-5.5.0\test\runTest\util.js" />
+    <Content Include="echarts-5.5.0\test\sample-compare.html" />
+    <Content Include="echarts-5.5.0\test\sankey-depth.html" />
+    <Content Include="echarts-5.5.0\test\sankey-emphasis-lineStyle.html" />
+    <Content Include="echarts-5.5.0\test\sankey-emphasis.html" />
+    <Content Include="echarts-5.5.0\test\sankey-jump.html" />
+    <Content Include="echarts-5.5.0\test\sankey-labelValue.html" />
+    <Content Include="echarts-5.5.0\test\sankey-level.html" />
+    <Content Include="echarts-5.5.0\test\sankey-nodeAlign-left.html" />
+    <Content Include="echarts-5.5.0\test\sankey-nodeAlign-right.html" />
+    <Content Include="echarts-5.5.0\test\sankey-ringed.html" />
+    <Content Include="echarts-5.5.0\test\sankey-series-nodes.html" />
+    <Content Include="echarts-5.5.0\test\sankey-vertical-energy.html" />
+    <Content Include="echarts-5.5.0\test\sankey-vertical.html" />
+    <Content Include="echarts-5.5.0\test\sankey.html" />
+    <Content Include="echarts-5.5.0\test\scale-integer.html" />
+    <Content Include="echarts-5.5.0\test\scatter-gps.html" />
+    <Content Include="echarts-5.5.0\test\scatter-markline.html" />
+    <Content Include="echarts-5.5.0\test\scatter-random-stream-fix-axis.html" />
+    <Content Include="echarts-5.5.0\test\scatter-random-stream.html" />
+    <Content Include="echarts-5.5.0\test\scatter-single-axis.html" />
+    <Content Include="echarts-5.5.0\test\scatter-stream-large.html" />
+    <Content Include="echarts-5.5.0\test\scatter-stream-not-large.html" />
+    <Content Include="echarts-5.5.0\test\scatter-stream-visual.html" />
+    <Content Include="echarts-5.5.0\test\scatter-weibo.html" />
+    <Content Include="echarts-5.5.0\test\scatter.html" />
+    <Content Include="echarts-5.5.0\test\scatterMatrix.html" />
+    <Content Include="echarts-5.5.0\test\selectedMode.html" />
+    <Content Include="echarts-5.5.0\test\setOption.html" />
+    <Content Include="echarts-5.5.0\test\shape-custom.html" />
+    <Content Include="echarts-5.5.0\test\showTip.html" />
+    <Content Include="echarts-5.5.0\test\singleAxisScales.html" />
+    <Content Include="echarts-5.5.0\test\smooth.html" />
+    <Content Include="echarts-5.5.0\test\splitLine.html" />
+    <Content Include="echarts-5.5.0\test\ssr-animaiton-wave.html" />
+    <Content Include="echarts-5.5.0\test\ssr.html" />
+    <Content Include="echarts-5.5.0\test\stackBar-dataZoom.html" />
+    <Content Include="echarts-5.5.0\test\stream-basic.css" />
+    <Content Include="echarts-5.5.0\test\stream-basic.js" />
+    <Content Include="echarts-5.5.0\test\stream-basic1.html" />
+    <Content Include="echarts-5.5.0\test\stream-basic2.html" />
+    <Content Include="echarts-5.5.0\test\stream-filter.html" />
+    <Content Include="echarts-5.5.0\test\stream-filter2.html" />
+    <Content Include="echarts-5.5.0\test\sunburst-book.html" />
+    <Content Include="echarts-5.5.0\test\sunburst-canvas.html" />
+    <Content Include="echarts-5.5.0\test\sunburst-drink.html" />
+    <Content Include="echarts-5.5.0\test\sunburst-highlight.html" />
+    <Content Include="echarts-5.5.0\test\sunburst-itemStyle.html" />
+    <Content Include="echarts-5.5.0\test\sunburst-label-align.html" />
+    <Content Include="echarts-5.5.0\test\sunburst-label-rotate.html" />
+    <Content Include="echarts-5.5.0\test\sunburst-label.html" />
+    <Content Include="echarts-5.5.0\test\sunburst-simple.html" />
+    <Content Include="echarts-5.5.0\test\sunburst-visualMap.html" />
+    <Content Include="echarts-5.5.0\test\sunburst.html" />
+    <Content Include="echarts-5.5.0\test\svg-gradient-opacity.html" />
+    <Content Include="echarts-5.5.0\test\svg-ssr.html" />
+    <Content Include="echarts-5.5.0\test\svg-test.html" />
+    <Content Include="echarts-5.5.0\test\symbol.html" />
+    <Content Include="echarts-5.5.0\test\symbol2.html" />
+    <Content Include="echarts-5.5.0\test\symbol3.html" />
+    <Content Include="echarts-5.5.0\test\theme.html" />
+    <Content Include="echarts-5.5.0\test\themeRiver.html" />
+    <Content Include="echarts-5.5.0\test\themeRiver2.html" />
+    <Content Include="echarts-5.5.0\test\themeRiver3.html" />
+    <Content Include="echarts-5.5.0\test\timeline-case.html" />
+    <Content Include="echarts-5.5.0\test\timeline-dynamic-series.html" />
+    <Content Include="echarts-5.5.0\test\timeline-event.html" />
+    <Content Include="echarts-5.5.0\test\timeline-finance.html" />
+    <Content Include="echarts-5.5.0\test\timeline-layout.html" />
+    <Content Include="echarts-5.5.0\test\timeline-life.html" />
+    <Content Include="echarts-5.5.0\test\timeScale-formatter.html" />
+    <Content Include="echarts-5.5.0\test\timeScale.html" />
+    <Content Include="echarts-5.5.0\test\timeScale2.html" />
+    <Content Include="echarts-5.5.0\test\timeZone.html" />
+    <Content Include="echarts-5.5.0\test\tmp-base.html" />
+    <Content Include="echarts-5.5.0\test\toolbox-custom.html" />
+    <Content Include="echarts-5.5.0\test\toolbox-saveImage-background-svg.html" />
+    <Content Include="echarts-5.5.0\test\toolbox-saveImage-background.html" />
+    <Content Include="echarts-5.5.0\test\toolbox-stack-custom.html" />
+    <Content Include="echarts-5.5.0\test\toolbox-stack.html" />
+    <Content Include="echarts-5.5.0\test\toolbox-textStyle.html" />
+    <Content Include="echarts-5.5.0\test\toolbox-title.html" />
+    <Content Include="echarts-5.5.0\test\toolbox-tooltip.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-action.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-alwaysShowContent.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-appendTo.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-appendToBody.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-axisPointer.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-axisPointer2.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-cascade.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-component.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-domnode.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-event.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-lag-glitch.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-link.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-multiple.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-rich.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-setOption.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-textStyle.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-touch.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-valueFormatter.html" />
+    <Content Include="echarts-5.5.0\test\tooltip-windowResize.html" />
+    <Content Include="echarts-5.5.0\test\tooltip.html" />
+    <Content Include="echarts-5.5.0\test\tooltipTestHelper.js" />
+    <Content Include="echarts-5.5.0\test\touch-candlestick.html" />
+    <Content Include="echarts-5.5.0\test\touch-slide.html" />
+    <Content Include="echarts-5.5.0\test\touch-test.html" />
+    <Content Include="echarts-5.5.0\test\tree-addNode.html" />
+    <Content Include="echarts-5.5.0\test\tree-basic.html" />
+    <Content Include="echarts-5.5.0\test\tree-image.html" />
+    <Content Include="echarts-5.5.0\test\tree-image2.html" />
+    <Content Include="echarts-5.5.0\test\tree-legend.html" />
+    <Content Include="echarts-5.5.0\test\tree-orient-right-left.html" />
+    <Content Include="echarts-5.5.0\test\tree-orient-top-bottom.html" />
+    <Content Include="echarts-5.5.0\test\tree-polyline.html" />
+    <Content Include="echarts-5.5.0\test\tree-radial.html" />
+    <Content Include="echarts-5.5.0\test\tree-recurrentRemoveNode.html" />
+    <Content Include="echarts-5.5.0\test\tree-removeNode.html" />
+    <Content Include="echarts-5.5.0\test\tree-roam.html" />
+    <Content Include="echarts-5.5.0\test\tree-setOption-twice.html" />
+    <Content Include="echarts-5.5.0\test\tree-vertical.html" />
+    <Content Include="echarts-5.5.0\test\treemap-action.html" />
+    <Content Include="echarts-5.5.0\test\treemap-disk.html" />
+    <Content Include="echarts-5.5.0\test\treemap-disk2.html" />
+    <Content Include="echarts-5.5.0\test\treemap-obama.html" />
+    <Content Include="echarts-5.5.0\test\treemap-option.html" />
+    <Content Include="echarts-5.5.0\test\treemap-option2.html" />
+    <Content Include="echarts-5.5.0\test\treemap-setOption-twice-noAnimation.html" />
+    <Content Include="echarts-5.5.0\test\treemap-setOption-twice.html" />
+    <Content Include="echarts-5.5.0\test\treemap-simple.html" />
+    <Content Include="echarts-5.5.0\test\treemap-simple2.html" />
+    <Content Include="echarts-5.5.0\test\treemap-visual.html" />
+    <Content Include="echarts-5.5.0\test\universalTransition-multiLevelDrillDown.html" />
+    <Content Include="echarts-5.5.0\test\universalTransition.html" />
+    <Content Include="echarts-5.5.0\test\universalTransition2.html" />
+    <Content Include="echarts-5.5.0\test\universalTransition3.html" />
+    <Content Include="echarts-5.5.0\test\ut\jest.config.cjs" />
+    <Content Include="echarts-5.5.0\test\visualMap-categories.html" />
+    <Content Include="echarts-5.5.0\test\visualMap-continuous.html" />
+    <Content Include="echarts-5.5.0\test\visualMap-large.html" />
+    <Content Include="echarts-5.5.0\test\visualMap-layout.html" />
+    <Content Include="echarts-5.5.0\test\visualMap-multi-continuous.html" />
+    <Content Include="echarts-5.5.0\test\visualMap-on-data.html" />
+    <Content Include="echarts-5.5.0\test\visualMap-opacity.html" />
+    <Content Include="echarts-5.5.0\test\visualMap-performance1.html" />
+    <Content Include="echarts-5.5.0\test\visualMap-pieces.html" />
+    <Content Include="echarts-5.5.0\test\visualMap-scatter-colorAndSymbol.html" />
+    <Content Include="echarts-5.5.0\test\visualMap-scatter-symbolSize.html" />
+    <Content Include="echarts-5.5.0\test\visualMap-special-case.html" />
+    <Content Include="echarts-5.5.0\test\webkit-dep.html" />
+    <Content Include="echarts-5.5.0\test\worldPopulationBubble.html" />
+    <Content Include="echarts-5.5.0\theme\azul.js" />
+    <Content Include="echarts-5.5.0\theme\bee-inspired.js" />
+    <Content Include="echarts-5.5.0\theme\blue.js" />
+    <Content Include="echarts-5.5.0\theme\caravan.js" />
+    <Content Include="echarts-5.5.0\theme\carp.js" />
+    <Content Include="echarts-5.5.0\theme\cool.js" />
+    <Content Include="echarts-5.5.0\theme\dark-blue.js" />
+    <Content Include="echarts-5.5.0\theme\dark-bold.js" />
+    <Content Include="echarts-5.5.0\theme\dark-digerati.js" />
+    <Content Include="echarts-5.5.0\theme\dark-fresh-cut.js" />
+    <Content Include="echarts-5.5.0\theme\dark-mushroom.js" />
+    <Content Include="echarts-5.5.0\theme\dark.js" />
+    <Content Include="echarts-5.5.0\theme\eduardo.js" />
+    <Content Include="echarts-5.5.0\theme\forest.js" />
+    <Content Include="echarts-5.5.0\theme\fresh-cut.js" />
+    <Content Include="echarts-5.5.0\theme\fruit.js" />
+    <Content Include="echarts-5.5.0\theme\gray.js" />
+    <Content Include="echarts-5.5.0\theme\green.js" />
+    <Content Include="echarts-5.5.0\theme\helianthus.js" />
+    <Content Include="echarts-5.5.0\theme\infographic.js" />
+    <Content Include="echarts-5.5.0\theme\inspired.js" />
+    <Content Include="echarts-5.5.0\theme\jazz.js" />
+    <Content Include="echarts-5.5.0\theme\london.js" />
+    <Content Include="echarts-5.5.0\theme\macarons.js" />
+    <Content Include="echarts-5.5.0\theme\macarons2.js" />
+    <Content Include="echarts-5.5.0\theme\mint.js" />
+    <Content Include="echarts-5.5.0\theme\red-velvet.js" />
+    <Content Include="echarts-5.5.0\theme\red.js" />
+    <Content Include="echarts-5.5.0\theme\roma.js" />
+    <Content Include="echarts-5.5.0\theme\royal.js" />
+    <Content Include="echarts-5.5.0\theme\sakura.js" />
+    <Content Include="echarts-5.5.0\theme\shine.js" />
+    <Content Include="echarts-5.5.0\theme\tech-blue.js" />
+    <Content Include="echarts-5.5.0\theme\tool\option\area.js" />
+    <Content Include="echarts-5.5.0\theme\tool\option\bar.js" />
+    <Content Include="echarts-5.5.0\theme\tool\option\graph.js" />
+    <Content Include="echarts-5.5.0\theme\tool\option\map.js" />
+    <Content Include="echarts-5.5.0\theme\tool\option\pie.js" />
+    <Content Include="echarts-5.5.0\theme\tool\option\scatter.js" />
+    <Content Include="echarts-5.5.0\theme\tool\thumb.html" />
+    <Content Include="echarts-5.5.0\theme\tool\thumb.js" />
+    <Content Include="echarts-5.5.0\theme\vintage.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="font\css\all.css" />
+    <Content Include="font\css\all.min.css" />
+    <Content Include="font\css\brands.css" />
+    <Content Include="font\css\brands.min.css" />
+    <Content Include="font\css\fontawesome.css" />
+    <Content Include="font\css\fontawesome.min.css" />
+    <Content Include="font\css\regular.css" />
+    <Content Include="font\css\regular.min.css" />
+    <Content Include="font\css\solid.css" />
+    <Content Include="font\css\solid.min.css" />
+    <Content Include="font\css\svg-with-js.css" />
+    <Content Include="font\css\svg-with-js.min.css" />
+    <Content Include="font\css\v4-font-face.css" />
+    <Content Include="font\css\v4-font-face.min.css" />
+    <Content Include="font\css\v4-shims.css" />
+    <Content Include="font\css\v4-shims.min.css" />
+    <Content Include="font\css\v5-font-face.css" />
+    <Content Include="font\css\v5-font-face.min.css" />
+    <Content Include="Global.asax" />
+    <Content Include="JS\jquery-3.7.1.min.js" />
+    <Content Include="JS\Login.js" />
+    <Content Include="JS\Resident.js" />
+    <Content Include="JS\Signin.js" />
+    <Content Include="Master.CSS\Car.css" />
+    <Content Include="Master.CSS\Common.css" />
+    <Content Include="Master.CSS\House.css" />
+    <Content Include="Master.CSS\Login.css" />
+    <Content Include="Master.CSS\Maintenance.css" />
+    <Content Include="Master.CSS\master.css" />
+    <Content Include="Master.CSS\PersonalInformation.css" />
+    <Content Include="Master.CSS\Repairer.css" />
+    <Content Include="Master.CSS\ResidentList.css" />
+    <Content Include="Master.CSS\ServiceCharge.css" />
+    <Content Include="Master.CSS\shangmen.css" />
+    <Content Include="Master.CSS\Signin.css" />
+    <Content Include="Master.CSS\TimeXuanZe.css" />
+    <Content Include="Views\LoginUI\wangjiPassword.aspx" />
+    <Content Include="Views\News\NewsList.aspx" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="bootstrap\css\bootstrap.css.map" />
+    <Content Include="bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="bootstrap5\css\bootstrap-grid.css.map" />
+    <Content Include="bootstrap5\css\bootstrap-grid.min.css.map" />
+    <Content Include="bootstrap5\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="bootstrap5\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="bootstrap5\css\bootstrap-reboot.css.map" />
+    <Content Include="bootstrap5\css\bootstrap-reboot.min.css.map" />
+    <Content Include="bootstrap5\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="bootstrap5\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="bootstrap5\css\bootstrap-utilities.css.map" />
+    <Content Include="bootstrap5\css\bootstrap-utilities.min.css.map" />
+    <Content Include="bootstrap5\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="bootstrap5\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="bootstrap5\css\bootstrap.css.map" />
+    <Content Include="bootstrap5\css\bootstrap.min.css.map" />
+    <Content Include="bootstrap5\css\bootstrap.rtl.css.map" />
+    <Content Include="bootstrap5\css\bootstrap.rtl.min.css.map" />
+    <Content Include="bootstrap5\js\bootstrap.bundle.js.map" />
+    <Content Include="bootstrap5\js\bootstrap.bundle.min.js.map" />
+    <Content Include="bootstrap5\js\bootstrap.esm.js.map" />
+    <Content Include="bootstrap5\js\bootstrap.esm.min.js.map" />
+    <Content Include="bootstrap5\js\bootstrap.js.map" />
+    <Content Include="bootstrap5\js\bootstrap.min.js.map" />
+    <Content Include="Text\WebForm3.aspx" />
+    <Content Include="Views\Carbarn\CarbarnList.aspx" />
+    <Content Include="Views\DomesticConsumer\gerenzhongxin.aspx" />
+    <Content Include="Views\DomesticConsumer\InformList.aspx" />
+    <Content Include="Views\DomesticConsumer\InformUI.aspx" />
+    <Content Include="Views\DomesticConsumer\ShangMenFuWu.aspx" />
+    <Content Include="Views\Image\01542f5e4f95ada801216518e864b1.jpg%401280w_1l_2o_100sh.jpg" />
+    <Content Include="Views\Image\11.jpg" />
+    <Content Include="Views\Image\91yTSEUnGWL._AC_SX679_.jpg" />
+    <Content Include="Views\Image\aaOIP-C.jpg" />
+    <Content Include="Views\Image\bingxiang.jpg" />
+    <Content Include="Views\Image\chaunglianjpg.jpg" />
+    <Content Include="Views\Image\chufang.jpg" />
+    <Content Include="Views\Image\fangjian2.jpg%402o.jpg" />
+    <Content Include="Views\Image\fnagjianzhengjie.jpg" />
+    <Content Include="Views\Image\kongtiao.jpg" />
+    <Content Include="Views\Image\R-C %282%29.jpg" />
+    <Content Include="Views\Image\R-C %283%29.jpg" />
+    <Content Include="Views\Image\reshuiqi.jpg" />
+    <Content Include="Views\Image\xiyiji.png" />
+    <Content Include="Views\JiaZhengUI\JiaZheng.aspx" />
+    <Content Include="Views\JiaZhengUI\JiaZhengDingDanList.aspx" />
+    <Content Include="Views\JiaZhengUI\YuanGongUI.aspx" />
+    <Content Include="Views\LoginUI\jiaZhengSignin.aspx" />
+    <Content Include="Views\News\NewsUI.aspx" />
+    <Content Include="Views\ResidentUI\Res-Signin.aspx" />
+    <Content Include="Views\ServiceChargeUI\ServiceChargeing.aspx" />
+    <Content Include="Views\ShangmenfuwuUI\BingXiang.aspx" />
+    <Content Include="Views\ShangmenfuwuUI\GuanDao.aspx" />
+    <Content Include="Views\ShangmenfuwuUI\QuanWu.aspx" />
+    <Content Include="Views\ShangmenfuwuUI\RiChang.aspx" />
+    <Content Include="Views\ShangmenfuwuUI\ShangMenList.aspx" />
+    <Content Include="Views\ShangmenfuwuUI\ShenDu.aspx" />
+    <Content Include="Views\ShangmenfuwuUI\WeiXiuList.aspx" />
+    <Content Include="Views\ShangmenfuwuUI\YouYanJi.aspx" />
+    <Content Include="Views\ShuiDianRegister\ShuiDianRegisterUI.aspx" />
+    <Content Include="Views\StaffXiTong\GeRenZhongXin.aspx" />
+    <Content Include="Views\StaffXiTong\JiaZhengNumber.aspx" />
+    <Content Include="Views\StaffXiTong\JiaZhengNumberList.aspx" />
+    <Content Include="Views\StaffXiTong\NoticeStaffList.aspx" />
+    <Content Include="Views\StaffXiTong\NoticeStaffUI.aspx" />
+    <Content Include="Views\StaffXiTong\QingJia.aspx" />
+    <Content Include="Views\StaffXiTong\XiuGai.aspx" />
+    <Content Include="Views\staff\StaffList2.aspx" />
+    <Content Include="Views\staff\StaffSignin.aspx" />
+    <Content Include="Views\Text\WebForm1.aspx" />
+    <Content Include="Views\Text\WebForm3.aspx" />
+    <Content Include="Views\Text\WebForm4.aspx" />
+    <Content Include="Views\Text\WebForm5.aspx" />
+    <Content Include="Views\Text\WebForm6.aspx" />
+    <Content Include="Views\Text\WebForm7.aspx" />
+    <Content Include="Views\Text\WebForm8.aspx" />
+    <Content Include="Views\Text\WebForm9.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="bootstrap-datepicker-1.9.0\css\bootstrap-datepicker.css.map" />
+    <Content Include="bootstrap-datepicker-1.9.0\css\bootstrap-datepicker.standalone.css.map" />
+    <Content Include="bootstrap-datepicker-1.9.0\css\bootstrap-datepicker3.css.map" />
+    <Content Include="bootstrap-datepicker-1.9.0\css\bootstrap-datepicker3.standalone.css.map" />
+    <Content Include="echarts-5.5.0\.asf.yaml" />
+    <Content Include="echarts-5.5.0\.editorconfig" />
+    <Content Include="echarts-5.5.0\.eslintignore" />
+    <Content Include="echarts-5.5.0\.eslintrc-common.yaml" />
+    <Content Include="echarts-5.5.0\.gitattributes" />
+    <Content Include="echarts-5.5.0\.github\ISSUE_TEMPLATE\bug_report.yml" />
+    <Content Include="echarts-5.5.0\.github\ISSUE_TEMPLATE\config.yml" />
+    <Content Include="echarts-5.5.0\.github\ISSUE_TEMPLATE\feature_request.yml" />
+    <Content Include="echarts-5.5.0\.github\pull_request_template.md" />
+    <Content Include="echarts-5.5.0\.github\workflows\ci.yml" />
+    <Content Include="echarts-5.5.0\.github\workflows\nightly-next.yml" />
+    <Content Include="echarts-5.5.0\.github\workflows\nightly.yml" />
+    <Content Include="echarts-5.5.0\.github\workflows\pr-preview.yml" />
+    <Content Include="echarts-5.5.0\.github\workflows\source-release.yml" />
+    <Content Include="echarts-5.5.0\.github\workflows\stale.yml" />
+    <Content Include="echarts-5.5.0\.github\workflows\teardown-pr-preview.yml" />
+    <Content Include="echarts-5.5.0\.github\workflows\update-notice-year.yml" />
+    <Content Include="echarts-5.5.0\.gitignore" />
+    <Content Include="echarts-5.5.0\.headerignore" />
+    <Content Include="echarts-5.5.0\.husky\pre-commit" />
+    <Content Include="echarts-5.5.0\.jshintrc-dist" />
+    <Content Include="echarts-5.5.0\.lgtm.yml" />
+    <Content Include="echarts-5.5.0\.npmignore" />
+    <Content Include="echarts-5.5.0\.vscode\settings.json" />
+    <Content Include="echarts-5.5.0\build\package.json" />
+    <Content Include="echarts-5.5.0\build\source-release\template\announce-release.tpl" />
+    <Content Include="echarts-5.5.0\build\source-release\template\vote-release.tpl" />
+    <Content Include="echarts-5.5.0\build\source-release\template\vote-result.tpl" />
+    <Content Include="echarts-5.5.0\CONTRIBUTING.md" />
+    <Content Include="echarts-5.5.0\dist\echarts.common.js.map" />
+    <Content Include="echarts-5.5.0\dist\echarts.esm.js.map" />
+    <Content Include="echarts-5.5.0\dist\echarts.esm.mjs.map" />
+    <Content Include="echarts-5.5.0\dist\echarts.js.map" />
+    <Content Include="echarts-5.5.0\dist\echarts.simple.js.map" />
+    <Content Include="echarts-5.5.0\dist\extension\bmap.js.map" />
+    <Content Include="echarts-5.5.0\dist\extension\dataTool.js.map" />
+    <Content Include="echarts-5.5.0\dist\package.json" />
+    <Content Include="echarts-5.5.0\extension-src\.eslintrc.yaml" />
+    <Content Include="echarts-5.5.0\extension-src\bmap\README.md" />
+    <Content Include="echarts-5.5.0\i18n\package.json" />
+    <Content Include="echarts-5.5.0\KEYS" />
+    <Content Include="echarts-5.5.0\LICENSE" />
+    <Content Include="echarts-5.5.0\licenses\LICENSE-d3" />
+    <Content Include="echarts-5.5.0\NOTICE" />
+    <Content Include="echarts-5.5.0\package-lock.json" />
+    <Content Include="echarts-5.5.0\package.json" />
+    <Content Include="echarts-5.5.0\package.README.md" />
+    <Content Include="echarts-5.5.0\README.md" />
+    <Content Include="echarts-5.5.0\src\.eslintrc.yaml" />
+    <Content Include="echarts-5.5.0\ssr\client\dist\index.js.map" />
+    <Content Include="echarts-5.5.0\ssr\client\dist\package.json" />
+    <Content Include="echarts-5.5.0\ssr\client\src\.eslintrc.yaml" />
+    <Content Include="echarts-5.5.0\test\build\.jshintrc" />
+    <Content Include="echarts-5.5.0\test\build\esm2cjs\expect\.jshintrc" />
+    <Content Include="echarts-5.5.0\test\data\aqi\aqi-beijing.json" />
+    <Content Include="echarts-5.5.0\test\data\czech_geo.json" />
+    <Content Include="echarts-5.5.0\test\data\ec-option-doc-statistics-201604.json" />
+    <Content Include="echarts-5.5.0\test\data\ec-star.json" />
+    <Content Include="echarts-5.5.0\test\data\energy.json" />
+    <Content Include="echarts-5.5.0\test\data\flare.csv" />
+    <Content Include="echarts-5.5.0\test\data\flare.json" />
+    <Content Include="echarts-5.5.0\test\data\flight.json" />
+    <Content Include="echarts-5.5.0\test\data\global-wind.json" />
+    <Content Include="echarts-5.5.0\test\data\hangzhou-tracks.json" />
+    <Content Include="echarts-5.5.0\test\data\house-price-area2.json" />
+    <Content Include="echarts-5.5.0\test\data\ice-bucket-challenge.json" />
+    <Content Include="echarts-5.5.0\test\data\kawhi-leonard-16-17-regular.json" />
+    <Content Include="echarts-5.5.0\test\data\large-data.json" />
+    <Content Include="echarts-5.5.0\test\data\les-miserables.gexf" />
+    <Content Include="echarts-5.5.0\test\data\life-expectancy-table.json" />
+    <Content Include="echarts-5.5.0\test\data\life-expectancy.json" />
+    <Content Include="echarts-5.5.0\test\data\lines-bus.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\china-cities.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\china-contour.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\china-new.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\china.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\anhui.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\aomen.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\beijing.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\chongqing.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\fujian.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\gansu.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\guangdong.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\guangxi.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\guizhou.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\hainan.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\hebei.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\heilongjiang.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\henan.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\hubei.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\hunan.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\jiangsu.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\jiangxi.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\jilin.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\liaoning.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\neimenggu.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\ningxia.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\qinghai.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\shandong.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\shanghai.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\shanxi.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\shanxi1.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\sichuan.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\taiwan.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\tianjin.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\xianggang.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\xinjiang.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\xizang.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\yunnan.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\province\zhejiang.json" />
+    <Content Include="echarts-5.5.0\test\data\map\json\world.json" />
+    <Content Include="echarts-5.5.0\test\data\masterPainterColorChoice.json" />
+    <Content Include="echarts-5.5.0\test\data\nba-court-geo.json" />
+    <Content Include="echarts-5.5.0\test\data\nba-court.json" />
+    <Content Include="echarts-5.5.0\test\data\nutrients.json" />
+    <Content Include="echarts-5.5.0\test\data\option-view.json" />
+    <Content Include="echarts-5.5.0\test\data\option-view2.json" />
+    <Content Include="echarts-5.5.0\test\data\product.json" />
+    <Content Include="echarts-5.5.0\test\data\tree-simple.json" />
+    <Content Include="echarts-5.5.0\test\data\tree-simple2.json" />
+    <Content Include="echarts-5.5.0\test\data\usa.json" />
+    <Content Include="echarts-5.5.0\test\data\weibo.json" />
+    <Content Include="echarts-5.5.0\test\package.json" />
+    <Content Include="echarts-5.5.0\test\README.md" />
+    <Content Include="echarts-5.5.0\test\runTest\.eslintrc.yaml" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\allZero.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\appendData.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\area-large.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\area-stack.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\area2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\aria-line-bar.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\aria-pie.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\axes.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\axis-align-ticks.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\axis-boundaryGap.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\axis-interval.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\axis-interval2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\axis-lastLabel.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\axis-minorTick.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\axis-multiple.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\axis-style.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\axis.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\axisPosition.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar-background.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar-label-rotation.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar-large.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar-overflow-time-plot.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar-polar-animation.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar-polar-clockwise.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar-polar-multi-series-radial.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar-polar-multi-series.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar-polar-null-data-radial.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar-polar-stack.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar-race2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar-stack.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar-start.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar-width.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bar3.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\bmap.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\boxplot-multi.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\boxplot.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\brush.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\brush2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\brush3.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\calendar-converter.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\calendar-heatmap.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\calendar-month.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\candlestick-case.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\candlestick-empty.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\candlestick-large.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\candlestick-large2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\candlestick.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\candlestickConnect.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\clip.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\clip2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\coarse-pointer.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\color-mix-aqi.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\connect-dynamic.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\connect-manually.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\connect.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\connect2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\css-transform.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\custom-bmap-grid.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\custom-children-remove.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\custom-hexbin.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\custom-large.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\custom-shape-morphing.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\custom-update.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\custom.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataSelect.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataset-case.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataZoom-action.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataZoom-axes.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataZoom-axis-type.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataZoom-clip.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataZoom-extreme.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataZoom-rainfall-connect.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataZoom-rainfall-inside.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataZoom-rainfall.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataZoom-scatter-category.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataZoom-scatter-hv-polar.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataZoom-scatter-hv.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataZoom-scroll.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataZoom-sync.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataZoom-toolbox.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dataZoomHighPrecision.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\decal.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\drag-out.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\dynamic-splitNumber.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\ec-event.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\emphasis-disabled.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\emphasis-inherit.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\emphasis-self.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\funnel.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\gauge-distance.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\gauge-group-title-detail.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\gauge-pointer.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\gauge-progress.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\gauge-simple.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\gauge.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\geo-map-features.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\geo-map.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\geo-svg-demo.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\geo-svg.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\geo-update.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\geoScatter.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\getOption.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\graph-case.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\graph-grid.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\graph-simple.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\graph.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\graphic-animation-wave.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\graphic-animation.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\graphic-cases.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\graphic-draggable.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\graphic-transition.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\heatmap-gap-bug.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\heatmap-map.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\heatmap.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\homepage3.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\hoverFocus.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\hoverFocus2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\hoverStyle.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\hoverStyle2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\label-animation.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\label-layout.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\label-position.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\largeLine-tooltip.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\legend-visualMapColor.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\legend.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\line-animation-update.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\line-animation.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\line-boldWhenHover.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\line-case.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\line-crash.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\line-endLabel.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\line-sampling.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\line-visual2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\line.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\lines-bus.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\lines-symbolSize-update.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\map-contour.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\map-default.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\map-labels.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\map-parallel.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\map-province.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\map.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\mapWorld.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\markArea.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\marker-case.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\media-dataZoom.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\media-finance.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\media-pie.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\min-max-function.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\parallel-aqi.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\parallel-nutrients.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\pictorial-repeat.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\pie-action.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\pie-alignTo.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\pie-animation.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\pie-calculable.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\pie-cornerRadius.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\pie-endAngle.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\pie-label-extreme.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\pie-label.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\pie-percent.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\pie.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\polar-rounded.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\polarLine.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\polarScatter.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\radar.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\radar2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\radar3.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\radar4.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\resize-animation.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\roseType-labeline.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\sankey-depth.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\sankey-emphasis-lineStyle.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\sankey-jump.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\sankey-level.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\scatter-random-stream-fix-axis.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\scatter-single-axis.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\scatterMatrix.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\setOption.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\splitLine.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\stackBar-dataZoom.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\sunburst-book.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\sunburst-canvas.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\sunburst-label-rotate.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\svg-ssr.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\symbol.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\symbol2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\themeRiver.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\timeline-case.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\timeScale.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\timeScale2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\toolbox-stack-custom.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\toolbox-textStyle.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\toolbox-title.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\toolbox-tooltip.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\tooltip-appendToBody.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\tooltip-axisPointer.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\tooltip-axisPointer2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\tooltip-cascade.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\tooltip-component.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\tooltip-domnode.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\tooltip-event.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\tooltip-link.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\tooltip-rich.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\tooltip-setOption.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\tooltip-valueFormatter.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\tooltip.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\tree-image.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\tree-legend.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\tree-polyline.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\tree-radial.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\treemap-action.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\treemap-disk.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\treemap-disk2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\treemap-obama.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\treemap-option.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\treemap-option2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\universalTransition.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\universalTransition2.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\universalTransition3.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\visualMap-categories.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\visualMap-multi-continuous.json" />
+    <Content Include="echarts-5.5.0\test\runTest\actions\__meta__.json" />
+    <Content Include="echarts-5.5.0\test\runTest\package-lock.json" />
+    <Content Include="echarts-5.5.0\test\runTest\package.json" />
+    <Content Include="echarts-5.5.0\test\ut\.eslintrc.yaml" />
+    <Content Include="echarts-5.5.0\test\ut\tsconfig.json" />
+    <Content Include="echarts-5.5.0\theme\package.json" />
+    <Content Include="echarts-5.5.0\tsconfig.json" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Site.Master" />
+    <Content Include="Text\WebForm1.aspx" />
+    <Content Include="Text\WebForm2.aspx" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\CarUI\CarUI.aspx" />
+    <Content Include="Views\Complaint\ComplaintList.aspx" />
+    <Content Include="Views\Complaint\ComplaintUI.aspx" />
+    <Content Include="Views\DomesticConsumer\Amend.aspx" />
+    <Content Include="Views\DomesticConsumer\ComplaintList.aspx" />
+    <Content Include="Views\DomesticConsumer\ComplaintUI.aspx" />
+    <Content Include="Views\DomesticConsumer\Maintenance.aspx" />
+    <Content Include="Views\DomesticConsumer\MaintenanceList.aspx" />
+    <Content Include="Views\DomesticConsumer\NoticeList.aspx" />
+    <Content Include="Views\DomesticConsumer\NoticeUI.aspx" />
+    <Content Include="Views\DomesticConsumer\PayUI.aspx" />
+    <Content Include="Views\DomesticConsumer\PersonalInformation.aspx" />
+    <Content Include="Views\DomesticConsumer\WebForm1.aspx" />
+    <Content Include="Views\House\HouseUI.aspx" />
+    <Content Include="Views\Image\logo.jpg" />
+    <Content Include="Views\Image\qj7106326235.jpg" />
+    <Content Include="Views\Image\20150126213929.jpg" />
+    <Content Include="Views\Image\R-C.jpg" />
+    <Content Include="Views\LoginUI\Login.aspx" />
+    <Content Include="Views\LoginUI\JiaZhengLogin.aspx" />
+    <Content Include="Views\LoginUI\Signin.aspx" />
+    <Content Include="Views\staff\staffList.aspx" />
+    <Content Include="Views\staff\PassMaintenance.aspx" />
+    <Content Include="Views\Master\master.aspx" />
+    <Content Include="Views\DomesticConsumer\Pay.aspx" />
+    <Content Include="Views\Master\WebForm1.aspx" />
+    <Content Include="Views\Master\WebForm2.aspx" />
+    <Content Include="Views\Notice\NoticeList.aspx" />
+    <Content Include="Views\Notice\NoticeLooK.aspx" />
+    <Content Include="Views\Notice\NoticeUI.aspx" />
+    <Content Include="Views\RepairerUI\RepairerUI.aspx" />
+    <Content Include="Views\RepairerUI\RepairerFinishUI.aspx" />
+    <Content Include="Views\ResidentUI\ResidentList.aspx" />
+    <Content Include="Views\Text\WebFor.aspx" />
+    <Content Include="Views\Text\WebForm2.aspx" />
+    <Content Include="Views\ServiceChargeUI\ServiceChargeUI.aspx" />
+    <Content Include="Views\VisitRecordUI\VisitRecordList.aspx" />
+    <Content Include="Views\VisitRecordUI\VisitRecordUIAdd.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="Views\Master\Master.Master" />
+    <Content Include="font\webfonts\fa-brands-400.ttf" />
+    <Content Include="font\webfonts\fa-brands-400.woff2" />
+    <Content Include="font\webfonts\fa-regular-400.ttf" />
+    <Content Include="font\webfonts\fa-regular-400.woff2" />
+    <Content Include="font\webfonts\fa-solid-900.ttf" />
+    <Content Include="font\webfonts\fa-solid-900.woff2" />
+    <Content Include="font\webfonts\fa-v4compatibility.ttf" />
+    <Content Include="font\webfonts\fa-v4compatibility.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginUI\wangjiPassword.aspx.cs">
+      <DependentUpon>wangjiPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\LoginUI\wangjiPassword.aspx.designer.cs">
+      <DependentUpon>wangjiPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\News\NewsList.aspx.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\News\NewsList.aspx.designer.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Text\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Text\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Text\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Text\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Text\WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Text\WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Carbarn\CarbarnList.aspx.cs">
+      <DependentUpon>CarbarnList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Carbarn\CarbarnList.aspx.designer.cs">
+      <DependentUpon>CarbarnList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CarUI\CarUI.aspx.cs">
+      <DependentUpon>CarUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CarUI\CarUI.aspx.designer.cs">
+      <DependentUpon>CarUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Complaint\ComplaintList.aspx.cs">
+      <DependentUpon>ComplaintList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Complaint\ComplaintList.aspx.designer.cs">
+      <DependentUpon>ComplaintList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Complaint\ComplaintUI.aspx.cs">
+      <DependentUpon>ComplaintUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Complaint\ComplaintUI.aspx.designer.cs">
+      <DependentUpon>ComplaintUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\Amend.aspx.cs">
+      <DependentUpon>Amend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\Amend.aspx.designer.cs">
+      <DependentUpon>Amend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\ComplaintList.aspx.cs">
+      <DependentUpon>ComplaintList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\ComplaintList.aspx.designer.cs">
+      <DependentUpon>ComplaintList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\ComplaintUI.aspx.cs">
+      <DependentUpon>ComplaintUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\ComplaintUI.aspx.designer.cs">
+      <DependentUpon>ComplaintUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\gerenzhongxin.aspx.cs">
+      <DependentUpon>gerenzhongxin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\gerenzhongxin.aspx.designer.cs">
+      <DependentUpon>gerenzhongxin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\InformList.aspx.cs">
+      <DependentUpon>InformList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\InformList.aspx.designer.cs">
+      <DependentUpon>InformList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\InformUI.aspx.cs">
+      <DependentUpon>InformUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\InformUI.aspx.designer.cs">
+      <DependentUpon>InformUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\Maintenance.aspx.cs">
+      <DependentUpon>Maintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\Maintenance.aspx.designer.cs">
+      <DependentUpon>Maintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\MaintenanceList.aspx.cs">
+      <DependentUpon>MaintenanceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\MaintenanceList.aspx.designer.cs">
+      <DependentUpon>MaintenanceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\NoticeList.aspx.cs">
+      <DependentUpon>NoticeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\NoticeList.aspx.designer.cs">
+      <DependentUpon>NoticeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\NoticeUI.aspx.cs">
+      <DependentUpon>NoticeUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\NoticeUI.aspx.designer.cs">
+      <DependentUpon>NoticeUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\PayUI.aspx.cs">
+      <DependentUpon>PayUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\PayUI.aspx.designer.cs">
+      <DependentUpon>PayUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\PersonalInformation.aspx.cs">
+      <DependentUpon>PersonalInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\PersonalInformation.aspx.designer.cs">
+      <DependentUpon>PersonalInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\ShangMenFuWu.aspx.cs">
+      <DependentUpon>ShangMenFuWu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\ShangMenFuWu.aspx.designer.cs">
+      <DependentUpon>ShangMenFuWu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\House\HouseUI.aspx.cs">
+      <DependentUpon>HouseUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\House\HouseUI.aspx.designer.cs">
+      <DependentUpon>HouseUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\JiaZhengUI\JiaZheng.aspx.cs">
+      <DependentUpon>JiaZheng.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\JiaZhengUI\JiaZheng.aspx.designer.cs">
+      <DependentUpon>JiaZheng.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\JiaZhengUI\JiaZhengDingDanList.aspx.cs">
+      <DependentUpon>JiaZhengDingDanList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\JiaZhengUI\JiaZhengDingDanList.aspx.designer.cs">
+      <DependentUpon>JiaZhengDingDanList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\JiaZhengUI\YuanGongUI.aspx.cs">
+      <DependentUpon>YuanGongUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\JiaZhengUI\YuanGongUI.aspx.designer.cs">
+      <DependentUpon>YuanGongUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginUI\jiaZhengSignin.aspx.cs">
+      <DependentUpon>jiaZhengSignin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\LoginUI\jiaZhengSignin.aspx.designer.cs">
+      <DependentUpon>jiaZhengSignin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginUI\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\LoginUI\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginUI\JiaZhengLogin.aspx.cs">
+      <DependentUpon>JiaZhengLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\LoginUI\JiaZhengLogin.aspx.designer.cs">
+      <DependentUpon>JiaZhengLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginUI\Signin.aspx.cs">
+      <DependentUpon>Signin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\LoginUI\Signin.aspx.designer.cs">
+      <DependentUpon>Signin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\Staff.Master.cs">
+      <DependentUpon>Staff.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Master\Staff.Master.designer.cs">
+      <DependentUpon>Staff.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\News\NewsUI.aspx.cs">
+      <DependentUpon>NewsUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\News\NewsUI.aspx.designer.cs">
+      <DependentUpon>NewsUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StaffXiTong\GeRenZhongXin.aspx.cs">
+      <DependentUpon>GeRenZhongXin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\StaffXiTong\GeRenZhongXin.aspx.designer.cs">
+      <DependentUpon>GeRenZhongXin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StaffXiTong\JiaZhengNumber.aspx.cs">
+      <DependentUpon>JiaZhengNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\StaffXiTong\JiaZhengNumber.aspx.designer.cs">
+      <DependentUpon>JiaZhengNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StaffXiTong\JiaZhengNumberList.aspx.cs">
+      <DependentUpon>JiaZhengNumberList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\StaffXiTong\JiaZhengNumberList.aspx.designer.cs">
+      <DependentUpon>JiaZhengNumberList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StaffXiTong\NoticeStaffList.aspx.cs">
+      <DependentUpon>NoticeStaffList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\StaffXiTong\NoticeStaffList.aspx.designer.cs">
+      <DependentUpon>NoticeStaffList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StaffXiTong\NoticeStaffUI.aspx.cs">
+      <DependentUpon>NoticeStaffUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\StaffXiTong\NoticeStaffUI.aspx.designer.cs">
+      <DependentUpon>NoticeStaffUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StaffXiTong\QingJia.aspx.cs">
+      <DependentUpon>QingJia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\StaffXiTong\QingJia.aspx.designer.cs">
+      <DependentUpon>QingJia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StaffXiTong\XiuGai.aspx.cs">
+      <DependentUpon>XiuGai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\StaffXiTong\XiuGai.aspx.designer.cs">
+      <DependentUpon>XiuGai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\staff\staffList.aspx.cs">
+      <DependentUpon>staffList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\staff\staffList.aspx.designer.cs">
+      <DependentUpon>staffList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\staff\PassMaintenance.aspx.cs">
+      <DependentUpon>PassMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\staff\PassMaintenance.aspx.designer.cs">
+      <DependentUpon>PassMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\Common.Master.cs">
+      <DependentUpon>Common.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Master\Common.Master.designer.cs">
+      <DependentUpon>Common.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\master.aspx.cs">
+      <DependentUpon>master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Master\master.aspx.designer.cs">
+      <DependentUpon>master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Master\Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\Pay.aspx.cs">
+      <DependentUpon>Pay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DomesticConsumer\Pay.aspx.designer.cs">
+      <DependentUpon>Pay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Master\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Master\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Notice\NoticeList.aspx.cs">
+      <DependentUpon>NoticeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Notice\NoticeList.aspx.designer.cs">
+      <DependentUpon>NoticeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Notice\NoticeLooK.aspx.cs">
+      <DependentUpon>NoticeLooK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Notice\NoticeLooK.aspx.designer.cs">
+      <DependentUpon>NoticeLooK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Notice\NoticeUI.aspx.cs">
+      <DependentUpon>NoticeUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Notice\NoticeUI.aspx.designer.cs">
+      <DependentUpon>NoticeUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RepairerUI\RepairerUI.aspx.cs">
+      <DependentUpon>RepairerUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\RepairerUI\RepairerUI.aspx.designer.cs">
+      <DependentUpon>RepairerUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RepairerUI\RepairerFinishUI.aspx.cs">
+      <DependentUpon>RepairerFinishUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\RepairerUI\RepairerFinishUI.aspx.designer.cs">
+      <DependentUpon>RepairerFinishUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ResidentUI\Res-Signin.aspx.cs">
+      <DependentUpon>Res-Signin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ResidentUI\Res-Signin.aspx.designer.cs">
+      <DependentUpon>Res-Signin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ResidentUI\ResidentList.aspx.cs">
+      <DependentUpon>ResidentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ResidentUI\ResidentList.aspx.designer.cs">
+      <DependentUpon>ResidentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ServiceChargeUI\ServiceChargeing.aspx.cs">
+      <DependentUpon>ServiceChargeing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ServiceChargeUI\ServiceChargeing.aspx.designer.cs">
+      <DependentUpon>ServiceChargeing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShangmenfuwuUI\BingXiang.aspx.cs">
+      <DependentUpon>BingXiang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ShangmenfuwuUI\BingXiang.aspx.designer.cs">
+      <DependentUpon>BingXiang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShangmenfuwuUI\GuanDao.aspx.cs">
+      <DependentUpon>GuanDao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ShangmenfuwuUI\GuanDao.aspx.designer.cs">
+      <DependentUpon>GuanDao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShangmenfuwuUI\QuanWu.aspx.cs">
+      <DependentUpon>QuanWu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ShangmenfuwuUI\QuanWu.aspx.designer.cs">
+      <DependentUpon>QuanWu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShangmenfuwuUI\RiChang.aspx.cs">
+      <DependentUpon>RiChang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ShangmenfuwuUI\RiChang.aspx.designer.cs">
+      <DependentUpon>RiChang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShangmenfuwuUI\ShangMenList.aspx.cs">
+      <DependentUpon>ShangMenList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ShangmenfuwuUI\ShangMenList.aspx.designer.cs">
+      <DependentUpon>ShangMenList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShangmenfuwuUI\ShenDu.aspx.cs">
+      <DependentUpon>ShenDu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ShangmenfuwuUI\ShenDu.aspx.designer.cs">
+      <DependentUpon>ShenDu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShangmenfuwuUI\WeiXiuList.aspx.cs">
+      <DependentUpon>WeiXiuList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ShangmenfuwuUI\WeiXiuList.aspx.designer.cs">
+      <DependentUpon>WeiXiuList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShangmenfuwuUI\YouYanJi.aspx.cs">
+      <DependentUpon>YouYanJi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ShangmenfuwuUI\YouYanJi.aspx.designer.cs">
+      <DependentUpon>YouYanJi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShuiDianRegister\ShuiDianRegisterUI.aspx.cs">
+      <DependentUpon>ShuiDianRegisterUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ShuiDianRegister\ShuiDianRegisterUI.aspx.designer.cs">
+      <DependentUpon>ShuiDianRegisterUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\staff\StaffList2.aspx.cs">
+      <DependentUpon>StaffList2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\staff\StaffList2.aspx.designer.cs">
+      <DependentUpon>StaffList2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\staff\StaffSignin.aspx.cs">
+      <DependentUpon>StaffSignin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\staff\StaffSignin.aspx.designer.cs">
+      <DependentUpon>StaffSignin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Text\WebFor.aspx.cs">
+      <DependentUpon>WebFor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Text\WebFor.aspx.designer.cs">
+      <DependentUpon>WebFor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Text\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Text\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ServiceChargeUI\ServiceChargeUI.aspx.cs">
+      <DependentUpon>ServiceChargeUI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ServiceChargeUI\ServiceChargeUI.aspx.designer.cs">
+      <DependentUpon>ServiceChargeUI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Text\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Text\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Text\WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Text\WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Text\WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Text\WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Text\WebForm5.aspx.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Text\WebForm5.aspx.designer.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Text\WebForm6.aspx.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Text\WebForm6.aspx.designer.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Text\WebForm7.aspx.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Text\WebForm7.aspx.designer.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Text\WebForm8.aspx.cs">
+      <DependentUpon>WebForm8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Text\WebForm8.aspx.designer.cs">
+      <DependentUpon>WebForm8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Text\WebForm9.aspx.cs">
+      <DependentUpon>WebForm9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Text\WebForm9.aspx.designer.cs">
+      <DependentUpon>WebForm9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VisitRecordUI\VisitRecordList.aspx.cs">
+      <DependentUpon>VisitRecordList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\VisitRecordUI\VisitRecordList.aspx.designer.cs">
+      <DependentUpon>VisitRecordList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VisitRecordUI\VisitRecordUIAdd.aspx.cs">
+      <DependentUpon>VisitRecordUIAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\VisitRecordUI\VisitRecordUIAdd.aspx.designer.cs">
+      <DependentUpon>VisitRecordUIAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="carUpload\" />
+    <Folder Include="maintainUpload\" />
+    <Folder Include="upload\" />
+    <Folder Include="Views\ActivityUI\" />
+    <Folder Include="Views\Building\" />
+    <Folder Include="Views\CommunityUI\" />
+    <Folder Include="Views\ServiceChargeTypeUI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Views\Master\Common.Master" />
+    <Content Include="Views\Master\Staff.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{754aea9c-9db3-4ff9-b8ae-10275732f37c}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{5fdccec2-3513-479b-b1f1-ed0745923e93}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="echarts-5.5.0\build\template\charts.d.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\build\template\components.d.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\build\template\core.d.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\build\template\features.d.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\build\template\option.d.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\build\template\renderers.d.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\build\template\ssr\client\index.d.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\extension-src\bmap\bmap.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\extension-src\bmap\BMapCoordSys.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\extension-src\bmap\BMapModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\extension-src\bmap\BMapView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\extension-src\dataTool\gexf.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\extension-src\dataTool\index.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\extension-src\dataTool\prepareBoxplotData.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\index.d.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\action\roamHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\animation\basicTransition.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\animation\customGraphicKeyframeAnimation.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\animation\customGraphicTransition.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\animation\morphTransitionHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\animation\universalTransition.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\bar.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\bar\BarSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\bar\BarView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\bar\BaseBarSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\bar\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\bar\installPictorialBar.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\bar\PictorialBarSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\bar\PictorialBarView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\boxplot.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\boxplot\boxplotLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\boxplot\BoxplotSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\boxplot\boxplotTransform.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\boxplot\BoxplotView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\boxplot\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\boxplot\prepareBoxplotData.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\candlestick.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\candlestick\candlestickLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\candlestick\CandlestickSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\candlestick\CandlestickView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\candlestick\candlestickVisual.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\candlestick\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\candlestick\preprocessor.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\custom.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\custom\CustomSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\custom\CustomView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\custom\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\effectScatter.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\effectScatter\EffectScatterSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\effectScatter\EffectScatterView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\effectScatter\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\funnel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\funnel\funnelLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\funnel\FunnelSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\funnel\FunnelView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\funnel\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\gauge.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\gauge\GaugeSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\gauge\GaugeView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\gauge\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\gauge\PointerPath.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\graph.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\graph\adjustEdge.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\graph\categoryFilter.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\graph\categoryVisual.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\graph\circularLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\graph\circularLayoutHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\graph\createView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\graph\edgeVisual.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\graph\forceHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\graph\forceLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\graph\graphHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\graph\GraphSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\graph\GraphView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\graph\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\graph\simpleLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\graph\simpleLayoutHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\heatmap.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\heatmap\HeatmapLayer.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\heatmap\HeatmapSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\heatmap\HeatmapView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\heatmap\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\createClipPathFromCoordSys.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\createGraphFromNodeEdge.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\createRenderPlanner.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\createSeriesData.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\createSeriesDataSimply.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\EffectLine.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\EffectPolyline.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\EffectSymbol.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\enableAriaDecalForTree.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\labelHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\LargeLineDraw.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\LargeSymbolDraw.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\Line.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\LineDraw.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\LinePath.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\multipleGraphEdgeHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\Polyline.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\sectorHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\Symbol.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\SymbolDraw.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\treeHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\helper\whiskerBoxCommon.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\line.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\lines.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\lines\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\lines\linesLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\lines\LinesSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\lines\LinesView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\lines\linesVisual.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\line\helper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\line\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\line\lineAnimationDiff.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\line\LineSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\line\LineView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\line\poly.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\map.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\map\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\map\mapDataStatistic.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\map\MapSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\map\mapSymbolLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\map\MapView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\parallel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\parallel\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\parallel\ParallelSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\parallel\ParallelView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\parallel\parallelVisual.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\pictorialBar.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\pie.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\pie\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\pie\labelLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\pie\pieLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\pie\PieSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\pie\PieView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\radar.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\radar\backwardCompat.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\radar\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\radar\radarLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\radar\RadarSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\radar\RadarView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\sankey.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\sankey\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\sankey\sankeyLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\sankey\SankeySeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\sankey\SankeyView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\sankey\sankeyVisual.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\scatter.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\scatter\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\scatter\ScatterSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\scatter\ScatterView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\sunburst.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\sunburst\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\sunburst\sunburstAction.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\sunburst\sunburstLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\sunburst\SunburstPiece.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\sunburst\SunburstSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\sunburst\SunburstView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\sunburst\sunburstVisual.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\themeRiver.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\themeRiver\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\themeRiver\themeRiverLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\themeRiver\ThemeRiverSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\themeRiver\ThemeRiverView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\tree.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\treemap.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\treemap\Breadcrumb.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\treemap\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\treemap\treemapAction.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\treemap\treemapLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\treemap\TreemapSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\treemap\TreemapView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\treemap\treemapVisual.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\tree\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\tree\layoutHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\tree\traversalHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\tree\treeAction.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\tree\treeLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\tree\TreeSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\tree\TreeView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\chart\tree\treeVisual.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\aria.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\aria\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\aria\preprocessor.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axisPointer.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axisPointer\AxisPointer.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axisPointer\AxisPointerModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axisPointer\AxisPointerView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axisPointer\axisTrigger.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axisPointer\BaseAxisPointer.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axisPointer\CartesianAxisPointer.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axisPointer\findPointFromSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axisPointer\globalListener.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axisPointer\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axisPointer\modelHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axisPointer\PolarAxisPointer.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axisPointer\SingleAxisPointer.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axisPointer\viewHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axis\AngleAxisView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axis\AxisBuilder.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axis\axisSplitHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axis\AxisView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axis\CartesianAxisView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axis\parallelAxisAction.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axis\ParallelAxisView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axis\RadiusAxisView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\axis\SingleAxisView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\brush.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\brush\BrushModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\brush\BrushView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\brush\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\brush\preprocessor.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\brush\selector.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\brush\visualEncoding.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\calendar.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\calendar\CalendarView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\calendar\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataset.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataset\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoomInside.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoomSelect.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoomSlider.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\AxisProxy.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\dataZoomAction.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\DataZoomModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\dataZoomProcessor.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\DataZoomView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\helper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\history.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\InsideZoomModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\InsideZoomView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\installCommon.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\installDataZoomInside.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\installDataZoomSelect.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\installDataZoomSlider.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\roams.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\SelectZoomModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\SelectZoomView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\SliderZoomModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\dataZoom\SliderZoomView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\geo.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\geo\GeoView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\geo\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\graphic.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\graphic\GraphicModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\graphic\GraphicView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\graphic\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\grid.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\gridSimple.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\grid\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\grid\installSimple.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\helper\BrushController.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\helper\brushHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\helper\BrushTargetManager.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\helper\cursorHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\helper\interactionMutex.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\helper\listComponent.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\helper\MapDraw.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\helper\RoamController.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\helper\roamHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\helper\sliderMove.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\legend.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\legendPlain.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\legendScroll.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\legend\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\legend\installLegendPlain.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\legend\installLegendScroll.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\legend\legendAction.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\legend\legendFilter.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\legend\LegendModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\legend\LegendView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\legend\scrollableLegendAction.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\legend\ScrollableLegendModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\legend\ScrollableLegendView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\markArea.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\marker\checkMarkerInSeries.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\marker\installMarkArea.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\marker\installMarkLine.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\marker\installMarkPoint.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\marker\MarkAreaModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\marker\MarkAreaView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\marker\markerHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\marker\MarkerModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\marker\MarkerView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\marker\MarkLineModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\marker\MarkLineView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\marker\MarkPointModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\marker\MarkPointView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\markLine.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\markPoint.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\parallel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\parallel\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\parallel\ParallelView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\polar.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\polar\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\radar.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\radar\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\radar\RadarView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\singleAxis.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\singleAxis\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\timeline.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\timeline\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\timeline\preprocessor.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\timeline\SliderTimelineModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\timeline\SliderTimelineView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\timeline\timelineAction.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\timeline\TimelineAxis.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\timeline\TimelineModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\timeline\TimelineView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\title.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\title\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\toolbox.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\toolbox\featureManager.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\toolbox\feature\Brush.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\toolbox\feature\DataView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\toolbox\feature\DataZoom.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\toolbox\feature\MagicType.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\toolbox\feature\Restore.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\toolbox\feature\SaveAsImage.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\toolbox\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\toolbox\ToolboxModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\toolbox\ToolboxView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\tooltip.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\tooltip\helper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\tooltip\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\tooltip\seriesFormatTooltip.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\tooltip\TooltipHTMLContent.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\tooltip\tooltipMarkup.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\tooltip\TooltipModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\tooltip\TooltipRichContent.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\tooltip\TooltipView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\transform.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\transform\filterTransform.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\transform\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\transform\sortTransform.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMap.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMapContinuous.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMapPiecewise.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMap\ContinuousModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMap\ContinuousView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMap\helper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMap\install.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMap\installCommon.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMap\installVisualMapContinuous.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMap\installVisualMapPiecewise.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMap\PiecewiseModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMap\PiecewiseView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMap\preprocessor.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMap\typeDefaulter.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMap\visualEncoding.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMap\visualMapAction.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMap\VisualMapModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\component\visualMap\VisualMapView.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\Axis.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\axisAlignTicks.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\AxisBaseModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\axisCommonTypes.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\axisDefault.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\axisHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\axisModelCommonMixin.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\axisModelCreator.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\axisTickLabelBuilder.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\calendar\Calendar.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\calendar\CalendarModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\calendar\prepareCustom.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\cartesian\Axis2D.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\cartesian\AxisModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\cartesian\Cartesian.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\cartesian\Cartesian2D.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\cartesian\cartesianAxisHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\cartesian\defaultAxisExtentFromData.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\cartesian\Grid.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\cartesian\GridModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\cartesian\prepareCustom.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\CoordinateSystem.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\geo\fix\diaoyuIsland.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\geo\fix\geoCoord.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\geo\fix\nanhai.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\geo\fix\textCoord.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\geo\Geo.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\geo\geoCreator.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\geo\GeoJSONResource.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\geo\GeoModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\geo\geoSourceManager.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\geo\GeoSVGResource.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\geo\geoTypes.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\geo\parseGeoJson.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\geo\prepareCustom.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\geo\Region.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\parallel\AxisModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\parallel\Parallel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\parallel\ParallelAxis.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\parallel\parallelCreator.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\parallel\ParallelModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\parallel\parallelPreprocessor.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\polar\AngleAxis.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\polar\AxisModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\polar\Polar.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\polar\polarCreator.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\polar\PolarModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\polar\prepareCustom.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\polar\RadiusAxis.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\radar\IndicatorAxis.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\radar\Radar.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\radar\RadarModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\scaleRawExtentInfo.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\single\AxisModel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\single\prepareCustom.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\single\Single.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\single\SingleAxis.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\single\singleAxisHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\single\singleCreator.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\coord\View.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\core\CoordinateSystem.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\core\echarts.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\core\ExtensionAPI.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\core\impl.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\core\lifecycle.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\core\locale.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\core\Scheduler.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\core\task.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\DataDiffer.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\DataStore.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\Graph.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\helper\createDimensions.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\helper\dataProvider.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\helper\dataStackHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\helper\dataValueHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\helper\dimensionHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\helper\linkList.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\helper\linkSeriesData.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\helper\SeriesDataSchema.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\helper\sourceHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\helper\sourceManager.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\helper\transform.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\OrdinalMeta.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\SeriesData.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\SeriesDimensionDefine.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\Source.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\data\Tree.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\echarts.all.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\echarts.blank.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\echarts.common.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\echarts.simple.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\echarts.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\export\all.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\export\api.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\export\api\format.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\export\api\graphic.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\export\api\helper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\export\api\number.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\export\api\time.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\export\api\util.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\export\charts.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\export\components.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\export\core.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\export\features.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\export\option.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\export\renderers.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\extension.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\global.d.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langAR.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langCS.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langDE.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langEN.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langES.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langFI.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langFR.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langHU.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langIT.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langJA.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langKO.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langNL.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langPL.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langPT-br.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langRO.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langRU.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langSI.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langTH.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langTR.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langUK.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langVI.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\i18n\langZH.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\label\installLabelLayout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\label\labelGuideHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\label\labelLayoutHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\label\LabelManager.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\label\labelStyle.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\label\sectorLabel.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\layout\barGrid.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\layout\barPolar.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\layout\points.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\legacy\dataSelectAction.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\legacy\getTextRect.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\loading\default.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\model\Component.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\model\Global.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\model\globalDefault.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\model\internalComponentCreator.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\model\mixin\areaStyle.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\model\mixin\dataFormat.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\model\mixin\itemStyle.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\model\mixin\lineStyle.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\model\mixin\makeStyleMapper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\model\mixin\palette.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\model\mixin\textStyle.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\model\Model.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\model\OptionManager.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\model\referHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\model\Series.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\preprocessor\backwardCompat.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\preprocessor\helper\compatStyle.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\processor\dataFilter.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\processor\dataSample.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\processor\dataStack.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\processor\negativeDataFilter.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\renderer\installCanvasRenderer.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\renderer\installSVGRenderer.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\scale\helper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\scale\Interval.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\scale\Log.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\scale\Ordinal.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\scale\Scale.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\scale\Time.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\theme\dark.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\theme\light.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\animation.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\clazz.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\component.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\conditionalExpression.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\decal.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\ECEventProcessor.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\event.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\format.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\graphic.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\innerStore.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\KDTree.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\layout.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\log.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\model.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\number.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\quickSelect.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\shape\sausage.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\states.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\styleCompat.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\symbol.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\throttle.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\time.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\types.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\util\vendor.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\view\Chart.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\view\Component.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\visual\aria.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\visual\commonVisualTypes.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\visual\decal.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\visual\helper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\visual\LegendVisualProvider.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\visual\style.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\visual\symbol.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\visual\visualDefault.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\visual\VisualMapping.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\src\visual\visualSolution.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\ssr\client\src\index.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\types\basic.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\types\event.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\types\importPartial.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\core\extendExpect.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\core\setup.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\core\utHelper.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\index.d.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\api\containPixel.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\api\converter.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\api\getVisual.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\component\dataZoom\helper.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\component\graphic\setOption.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\component\helper\sliderMove.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\component\visualMap\setOption.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\data\createDimensions.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\data\dataTransform.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\data\dataValueHelper.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\data\SeriesData.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\model\componentDependency.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\model\componentMissing.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\model\Global.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\model\timelineMediaOptions.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\scale\interval.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\series\custom.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\util\graphic.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\util\layout.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\util\model.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\util\number.test.ts" />
+    <TypeScriptCompile Include="echarts-5.5.0\test\ut\spec\util\time.test.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65319</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:65319/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
